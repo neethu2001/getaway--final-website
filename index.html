@@ -1,0 +1,3188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Getaway Beach Resort Kovalam | Ocean View Stay & Coastal Experiences</title>
+
+    <meta name="description"
+          content="Experience Kovalam by the sea at Getaway Beach Resort. Enjoy spacious ocean-view rooms and suites, Coastal Flavour dining, poolside relaxation and warm Kerala hospitality.">
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        /* =====================================================
+           ROOT COLORS
+        ====================================================== */
+
+        :root {
+
+            --primary: #084C73;
+            --secondary: #C49A5A;
+            --cream: #F8F5EF;
+            --dark: #063B5A;
+            --white: #FFFFFF;
+            --text: #444444;
+            --light-text: #777777;
+
+        }
+
+
+        /* =====================================================
+           GLOBAL
+        ====================================================== */
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family: 'Montserrat', sans-serif;
+
+            color: var(--text);
+
+            background: #ffffff;
+
+            font-weight: 400;
+
+            letter-spacing: 0.2px;
+
+            line-height: 1.8;
+
+        }
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+
+            font-family: 'Playfair Display', serif;
+
+            font-weight: 500;
+
+        }
+
+
+        /* =====================================================
+           NAVBAR
+           SAME LOGO STYLE AS MENU PAGE
+        ====================================================== */
+
+        .navbar {
+
+            transition: all 0.4s ease;
+
+            padding: 14px 0;
+
+            z-index: 1000;
+
+            background: transparent;
+
+        }
+
+
+        .navbar.scrolled {
+
+            background: var(--primary);
+
+            padding: 12px 0;
+
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.18);
+
+        }
+
+
+        /* =====================================================
+           LOGO
+        ====================================================== */
+
+        .navbar-brand {
+
+            display: flex;
+
+            align-items: center;
+
+            text-decoration: none;
+
+            padding: 0;
+
+            margin: 0;
+
+        }
+
+
+        .navbar-brand img {
+
+            width: 220px;
+
+            height: auto;
+
+            display: block;
+
+            object-fit: contain;
+
+            transition: all 0.4s ease;
+
+        }
+
+
+        .navbar.scrolled .navbar-brand img {
+
+            width: 190px;
+
+        }
+
+
+        .navbar-brand:hover img {
+
+            opacity: 0.9;
+
+        }
+
+
+        /* =====================================================
+           NAVIGATION LINKS
+        ====================================================== */
+
+        .navbar .nav-link {
+
+            font-family: 'Montserrat', sans-serif;
+
+            color: white !important;
+
+            font-size: 10px;
+
+            font-weight: 500;
+
+            letter-spacing: 1.8px;
+
+            margin: 0 9px;
+
+            text-transform: uppercase;
+
+            transition: 0.3s;
+
+        }
+
+
+        .navbar .nav-link:hover {
+
+            color: var(--secondary) !important;
+
+        }
+
+
+        .navbar-toggler {
+
+            padding: 5px 8px;
+
+        }
+
+
+        .navbar-toggler:focus {
+
+            box-shadow: none;
+
+        }
+
+
+        /* =====================================================
+           GOLD BUTTON
+        ====================================================== */
+
+        .btn-gold {
+
+            font-family: 'Montserrat', sans-serif;
+
+            background: var(--secondary);
+
+            color: white;
+
+            border: none;
+
+            padding: 14px 28px;
+
+            letter-spacing: 1.8px;
+
+            font-size: 10px;
+
+            font-weight: 500;
+
+            text-transform: uppercase;
+
+            transition: 0.3s;
+
+            border-radius: 0;
+
+        }
+
+
+        .btn-gold:hover {
+
+            background: #A98045;
+
+            color: white;
+
+            transform: translateY(-2px);
+
+        }
+
+
+        /* =====================================================
+           HERO
+        ====================================================== */
+
+        .hero {
+
+            min-height: 100vh;
+
+            background:
+
+                linear-gradient(
+                    rgba(0, 0, 0, 0.38),
+                    rgba(0, 0, 0, 0.58)
+                ),
+
+                url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=85")
+
+                center/cover no-repeat;
+
+            display: flex;
+
+            align-items: center;
+
+            position: relative;
+
+        }
+
+
+        .hero-content {
+
+            color: white;
+
+            max-width: 850px;
+
+            margin: auto;
+
+            text-align: center;
+
+            padding-top: 60px;
+
+        }
+
+
+        .hero-subtitle {
+
+            font-family: 'Montserrat', sans-serif;
+
+            text-transform: uppercase;
+
+            letter-spacing: 5px;
+
+            font-size: 11px;
+
+            font-weight: 500;
+
+            margin-bottom: 22px;
+
+        }
+
+
+        .hero h1 {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: clamp(58px, 8vw, 105px);
+
+            font-weight: 400;
+
+            line-height: 1;
+
+            letter-spacing: -1.5px;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        .hero p {
+
+            max-width: 650px;
+
+            margin: auto auto 35px;
+
+            font-size: 14px;
+
+            font-weight: 300;
+
+            line-height: 1.9;
+
+            letter-spacing: 0.3px;
+
+        }
+
+
+        .hero-buttons a {
+
+            margin: 5px;
+
+        }
+
+
+        .btn-outline-light-custom {
+
+            font-family: 'Montserrat', sans-serif;
+
+            display: inline-block;
+
+            padding: 14px 28px;
+
+            border: 1px solid white;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 10px;
+
+            font-weight: 500;
+
+            letter-spacing: 1.8px;
+
+            text-transform: uppercase;
+
+            transition: 0.3s;
+
+        }
+
+
+        .btn-outline-light-custom:hover {
+
+            background: white;
+
+            color: var(--dark);
+
+        }
+
+
+        /* =====================================================
+           BOOKING BAR
+        ====================================================== */
+
+        .booking-wrapper {
+
+            margin-top: -55px;
+
+            position: relative;
+
+            z-index: 20;
+
+        }
+
+
+        .booking-box {
+
+            background: white;
+
+            padding: 25px;
+
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+
+        }
+
+
+        .booking-box label {
+
+            font-size: 9px;
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+
+            color: #777;
+
+            margin-bottom: 7px;
+
+        }
+
+
+        .booking-box input,
+        .booking-box select {
+
+            border-radius: 0;
+
+            border: 1px solid #ddd;
+
+            padding: 12px;
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-size: 12px;
+
+        }
+
+
+        /* =====================================================
+           COMMON SECTION
+        ====================================================== */
+
+        section {
+
+            padding: 100px 0;
+
+        }
+
+
+        .section-label {
+
+            font-family: 'Montserrat', sans-serif;
+
+            color: var(--secondary);
+
+            text-transform: uppercase;
+
+            letter-spacing: 4px;
+
+            font-size: 10px;
+
+            font-weight: 500;
+
+        }
+
+
+        .section-title {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: clamp(44px, 5vw, 68px);
+
+            font-weight: 500;
+
+            color: var(--primary);
+
+            line-height: 1.08;
+
+            letter-spacing: -0.8px;
+
+        }
+
+
+        .section-text {
+
+            color: #666;
+
+            line-height: 1.9;
+
+            font-size: 14px;
+
+            font-weight: 400;
+
+        }
+
+
+        /* =====================================================
+           ABOUT
+        ====================================================== */
+
+        .about-img {
+
+            width: 100%;
+
+            height: 550px;
+
+            object-fit: cover;
+
+        }
+
+
+        .about-content {
+
+            padding: 40px;
+
+        }
+
+
+        .about-stat {
+
+            border-left: 2px solid var(--secondary);
+
+            padding-left: 15px;
+
+        }
+
+
+        .about-stat strong {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 38px;
+
+            font-weight: 500;
+
+            color: var(--primary);
+
+        }
+
+
+        .about-stat span {
+
+            display: block;
+
+            font-size: 9px;
+
+            letter-spacing: 1px;
+
+            color: #777;
+
+            text-transform: uppercase;
+
+            line-height: 1.5;
+
+        }
+
+
+        /* =====================================================
+           FACILITIES
+        ====================================================== */
+
+        .features-section {
+
+            background: var(--cream);
+
+        }
+
+
+        .feature-box {
+
+            padding: 40px 25px;
+
+            text-align: center;
+
+            transition: 0.4s;
+
+            height: 100%;
+
+        }
+
+
+        .feature-box:hover {
+
+            transform: translateY(-8px);
+
+        }
+
+
+        .feature-icon {
+
+            width: 65px;
+
+            height: 65px;
+
+            border: 1px solid var(--secondary);
+
+            color: var(--secondary);
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            margin: auto auto 20px;
+
+            font-size: 20px;
+
+        }
+
+
+        .feature-box h4 {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 25px;
+
+            font-weight: 500;
+
+            color: var(--primary);
+
+        }
+
+
+        .feature-box p {
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-size: 11.5px;
+
+            font-weight: 400;
+
+            color: #777;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =====================================================
+           ACCOMMODATION
+        ====================================================== */
+
+        .room-card {
+
+            border: none;
+
+            background: white;
+
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+            overflow: hidden;
+
+            height: 100%;
+
+            transition: 0.4s;
+
+        }
+
+
+        .room-card:hover {
+
+            transform: translateY(-10px);
+
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+
+        }
+
+
+        .room-image-wrapper {
+
+            overflow: hidden;
+
+        }
+
+
+        .room-img {
+
+            height: 300px;
+
+            object-fit: cover;
+
+            transition: 0.6s;
+
+        }
+
+
+        .room-card:hover .room-img {
+
+            transform: scale(1.05);
+
+        }
+
+
+        .room-card-body {
+
+            padding: 30px;
+
+        }
+
+
+        .room-card h3 {
+
+            font-family: 'Playfair Display', serif;
+
+            color: var(--primary);
+
+            font-size: 29px;
+
+            font-weight: 500;
+
+            line-height: 1.25;
+
+        }
+
+
+        .room-card p {
+
+            color: #777;
+
+            font-size: 12.5px;
+
+            line-height: 1.9;
+
+            min-height: 105px;
+
+        }
+
+
+        .room-links {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 25px;
+
+            margin-top: 20px;
+
+        }
+
+
+        .room-link {
+
+            color: var(--secondary);
+
+            text-decoration: none;
+
+            font-size: 10px;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+
+        }
+
+
+        .room-link:hover {
+
+            color: var(--primary);
+
+        }
+
+
+        .room-book-link {
+
+            background: var(--secondary);
+
+            color: white;
+
+            padding: 11px 18px;
+
+            text-decoration: none;
+
+            font-size: 9px;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            font-weight: 500;
+
+            transition: 0.3s;
+
+        }
+
+
+        .room-book-link:hover {
+
+            background: var(--primary);
+
+            color: white;
+
+        }
+
+
+        /* =====================================================
+           DINING
+        ====================================================== */
+
+        .dining-img {
+
+            width: 100%;
+
+            height: 500px;
+
+            object-fit: cover;
+
+        }
+
+
+        .dining-content {
+
+            padding-right: 30px;
+
+        }
+
+
+        .dining-list {
+
+            list-style: none;
+
+            padding: 0;
+
+            margin-top: 25px;
+
+        }
+
+
+        .dining-list li {
+
+            margin-bottom: 15px;
+
+            font-size: 12px;
+
+            color: #555;
+
+        }
+
+
+        .dining-list i {
+
+            color: var(--secondary);
+
+            margin-right: 10px;
+
+        }
+
+
+        /* =====================================================
+           EXPERIENCE
+        ====================================================== */
+
+        .experience {
+
+            min-height: 600px;
+
+            background:
+
+                linear-gradient(
+                    rgba(0, 0, 0, 0.4),
+                    rgba(0, 0, 0, 0.58)
+                ),
+
+                url("https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=2000&q=85")
+
+                center/cover no-repeat;
+
+            display: flex;
+
+            align-items: center;
+
+            color: white;
+
+        }
+
+
+        .experience h2 {
+
+            font-family: 'Playfair Display', serif;
+
+            color: white;
+
+            font-size: clamp(52px, 6vw, 82px);
+
+            font-weight: 400;
+
+            line-height: 1.05;
+
+            letter-spacing: -1px;
+
+        }
+
+
+        .experience p {
+
+            max-width: 600px;
+
+            line-height: 1.9;
+
+            font-size: 14px;
+
+            font-weight: 300;
+
+        }
+
+
+        /* =====================================================
+           GALLERY
+        ====================================================== */
+
+        .gallery-item {
+
+            overflow: hidden;
+
+            height: 300px;
+
+            position: relative;
+
+        }
+
+
+        .gallery-item img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: 0.6s;
+
+        }
+
+
+        .gallery-item:hover img {
+
+            transform: scale(1.08);
+
+        }
+
+
+        .gallery-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            background: rgba(8, 76, 115, 0.45);
+
+            opacity: 0;
+
+            transition: 0.4s;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            color: white;
+
+            font-size: 25px;
+
+        }
+
+
+        .gallery-item:hover .gallery-overlay {
+
+            opacity: 1;
+
+        }
+
+
+        /* =====================================================
+           TESTIMONIALS
+        ====================================================== */
+
+        .testimonial-section {
+
+            background: var(--cream);
+
+        }
+
+
+        .testimonial {
+
+            background: white;
+
+            padding: 40px;
+
+            height: 100%;
+
+        }
+
+
+        .stars {
+
+            color: var(--secondary);
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .testimonial p {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 21px;
+
+            font-weight: 400;
+
+            line-height: 1.6;
+
+            color: #444;
+
+        }
+
+
+        .testimonial h5 {
+
+            font-family: 'Montserrat', sans-serif;
+
+            color: var(--primary);
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+
+        }
+
+
+        /* =====================================================
+           CONTACT
+        ====================================================== */
+
+        .location-box {
+
+            background: var(--primary);
+
+            color: white;
+
+            padding: 55px;
+
+            height: 100%;
+
+        }
+
+
+        .location-box h2 {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 55px;
+
+            font-weight: 400;
+
+            line-height: 1.1;
+
+        }
+
+
+        .location-box p {
+
+            color: rgba(255, 255, 255, 0.75);
+
+            line-height: 1.8;
+
+            font-size: 13px;
+
+        }
+
+
+        .contact-detail {
+
+            margin-top: 25px;
+
+            font-size: 13px;
+
+        }
+
+
+        .contact-detail i {
+
+            color: var(--secondary);
+
+            width: 25px;
+
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ====================================================== */
+
+        footer {
+
+            background: #084C73;
+
+            color: white;
+
+            padding: 75px 0 25px;
+
+        }
+
+
+        footer h3 {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 34px;
+
+            font-weight: 500;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        footer h5 {
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        footer p,
+        footer li {
+
+            color: rgba(255, 255, 255, 0.68);
+
+            font-size: 11px;
+
+            line-height: 1.9;
+
+        }
+
+
+        footer ul {
+
+            list-style: none;
+
+            padding: 0;
+
+        }
+
+
+        footer li {
+
+            margin-bottom: 7px;
+
+        }
+
+
+        footer li a {
+
+            color: rgba(255, 255, 255, 0.68);
+
+            text-decoration: none;
+
+            transition: 0.3s;
+
+        }
+
+
+        footer li a:hover {
+
+            color: var(--secondary);
+
+        }
+
+
+        /* =====================================================
+           SOCIAL ICONS
+        ====================================================== */
+
+        .social-icons a {
+
+            width: 40px;
+
+            height: 40px;
+
+            background: rgba(255, 255, 255, 0.18);
+
+            border-radius: 50%;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: white;
+
+            margin-right: 10px;
+
+            font-size: 16px;
+
+            transition: 0.3s;
+
+        }
+
+
+        .social-icons a:hover {
+
+            background: var(--secondary);
+
+            transform: translateY(-3px);
+
+        }
+
+
+        /* =====================================================
+           COPYRIGHT
+        ====================================================== */
+
+        .copyright {
+
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+            margin-top: 50px;
+
+            padding-top: 20px;
+
+            text-align: center;
+
+            color: rgba(255, 255, 255, 0.5);
+
+            font-size: 9px;
+
+            letter-spacing: 1.2px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media (max-width: 991px) {
+
+            .navbar {
+
+                background: var(--primary);
+
+                padding: 12px 0;
+
+            }
+
+
+            .navbar .nav-link {
+
+                margin: 5px 0;
+
+            }
+
+
+            .navbar-brand img {
+
+                width: 135px;
+
+            }
+
+
+            .booking-wrapper {
+
+                margin-top: 0;
+
+            }
+
+
+            .about-content {
+
+                padding: 30px 0;
+
+            }
+
+
+            .hero {
+
+                min-height: 90vh;
+
+            }
+
+        }
+
+
+        @media (max-width: 767px) {
+
+            section {
+
+                padding: 70px 0;
+
+            }
+
+
+            .navbar-brand img {
+                width: 155px;
+                height: auto;
+                max-height: none;
+            }
+
+
+            .navbar.scrolled .navbar-brand img {
+
+                width: 145px;
+
+            }
+
+
+            .hero h1 {
+
+                font-size: 55px;
+
+            }
+
+
+            .hero p {
+
+                font-size: 13px;
+
+            }
+
+
+            .about-img,
+            .dining-img {
+
+                height: 350px;
+
+            }
+
+
+            .gallery-item {
+
+                height: 230px;
+
+            }
+
+
+            .location-box {
+
+                padding: 35px;
+
+            }
+
+
+            .location-box h2 {
+
+                font-size: 45px;
+
+            }
+
+
+            .section-title {
+
+                font-size: 45px;
+
+            }
+
+
+            .room-links {
+
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                gap: 15px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+====================================================== -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+
+    <div class="container">
+
+
+        <!-- LOGO -->
+
+        <!-- Same logo used in Menu page -->
+
+        <a
+            class="navbar-brand"
+            href="#home"
+            aria-label="Getaway Beach Resort Kovalam">
+
+            <img
+                src="getaway-logo-white-cropped.png"
+                alt="Getaway Beach Resort Kovalam Logo">
+
+        </a>
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <i class="fa-solid fa-bars text-white"></i>
+
+        </button>
+
+
+        <!-- NAVIGATION -->
+
+        <div
+            class="collapse navbar-collapse"
+            id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="#home">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="#about">
+
+                        About
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="#rooms">
+
+                        Accommodation
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="dining.html">
+
+                        Dining
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="#experience">
+
+                        Experience
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="gallery.html">
+
+                        Gallery
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="#contact">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+
+                    <a
+                        href="https://staahmax.staah.net/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-gold">
+
+                        Book Your Stay
+
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =====================================================
+     HERO
+====================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="hero-subtitle">
+                Welcome to Getaway
+            </div>
+
+
+            <h1>
+
+                Experience Kovalam
+                <br>
+                By The Sea
+
+            </h1>
+
+
+            <p>
+
+                A memorable coastal stay shaped by Arabian Sea views,
+                thoughtful comfort, warm Kerala hospitality and the many
+                experiences of Kovalam.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#rooms"
+                    class="btn btn-gold">
+
+                    Explore Rooms
+
+                </a>
+
+
+                <a
+                    href="#about"
+                    class="btn-outline-light-custom">
+
+                    Discover More
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BOOKING BAR
+====================================================== -->
+
+<div class="booking-wrapper">
+
+    <div class="container">
+
+        <div class="booking-box">
+
+            <form>
+
+                <div class="row g-3 align-items-end">
+
+                    <div class="col-lg-3">
+
+                        <label>
+                            Check In
+                        </label>
+
+                        <input
+                            type="date"
+                            class="form-control">
+
+                    </div>
+
+
+                    <div class="col-lg-3">
+
+                        <label>
+                            Check Out
+                        </label>
+
+                        <input
+                            type="date"
+                            class="form-control">
+
+                    </div>
+
+
+                    <div class="col-lg-2">
+
+                        <label>
+                            Adults
+                        </label>
+
+                        <select class="form-select">
+
+                            <option>
+                                1 Adult
+                            </option>
+
+                            <option>
+                                2 Adults
+                            </option>
+
+                            <option>
+                                3 Adults
+                            </option>
+
+                            <option>
+                                4 Adults
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="col-lg-2">
+
+                        <label>
+                            Children
+                        </label>
+
+                        <select class="form-select">
+
+                            <option>
+                                0 Children
+                            </option>
+
+                            <option>
+                                1 Child
+                            </option>
+
+                            <option>
+                                2 Children
+                            </option>
+
+                            <option>
+                                3 Children
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="col-lg-2">
+
+                        <a
+                            href="https://staahmax.staah.net/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-gold w-100">
+
+                            Check Availability
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     ABOUT
+====================================================== -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <img
+                    src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=85"
+                    class="about-img"
+                    alt="Getaway Beach Resort">
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="about-content">
+
+                    <div class="section-label">
+                        Welcome to Getaway
+                    </div>
+
+
+                    <h2 class="section-title mt-3 mb-4">
+
+                        A Boutique Coastal
+                        Retreat Awaits
+
+                    </h2>
+
+
+                    <p class="section-text">
+
+                        Getaway Beach Resort, Kovalam is a boutique coastal
+                        retreat offering a refined seaside experience along
+                        the Arabian Sea.
+
+                    </p>
+
+
+                    <p class="section-text">
+
+                        With spacious sea-view accommodation, Coastal Flavour
+                        Restaurant, a Swimming Pool, Private Gazebo Dining and
+                        Outdoor event spaces, it is an inviting base to discover Kovalam.
+
+                    </p>
+
+
+                    <div class="row mt-4">
+
+                        <div class="col-4">
+
+                            <div class="about-stat">
+
+                                <strong>
+                                    13
+                                </strong>
+
+                                <span>
+                                    Opulent Accommodations
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-4">
+
+                            <div class="about-stat">
+
+                                <strong>
+                                    4
+                                </strong>
+
+                                <span>
+                                    Room Types
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-4">
+
+                            <div class="about-stat">
+
+                                <strong>
+                                    1
+                                </strong>
+
+                                <span>
+                                    Culinary Delight
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FACILITIES
+====================================================== -->
+
+<section class="features-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <div class="section-label">
+                Resort Facilities
+            </div>
+
+            <h2 class="section-title mt-3">
+                Everything You Need
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4 justify-content-center">
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="feature-box">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-water-ladder"></i>
+
+                    </div>
+
+                    <h4>
+                        Swimming Pool
+                    </h4>
+
+                    <p>
+
+                        Take a refreshing swim or unwind on sea-view loungers
+                        in a calm coastal setting.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="feature-box">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-spa"></i>
+
+                    </div>
+
+                    <h4>
+                        Private Gazebo Dining
+                    </h4>
+
+                    <p>
+
+                        Create a memorable evening with an intimate candlelight
+                        dinner for two or a special celebration.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="feature-box">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-utensils"></i>
+
+                    </div>
+
+                    <h4>
+                        Concierge & Excursions
+                    </h4>
+
+                    <p>
+
+                        Let our team assist with car rental, ticketing,
+                        sightseeing and curated travel experiences.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ACCOMMODATION
+====================================================== -->
+
+<section id="rooms">
+
+    <div class="container">
+
+
+        <div class="text-center mb-5">
+
+            <div class="section-label">
+                Accommodation
+            </div>
+
+
+            <h2 class="section-title mt-3">
+
+                Relish Your
+                Heavenly Abode
+
+            </h2>
+
+
+            <p
+                class="section-text mx-auto mt-3"
+                style="max-width:650px;">
+
+                Discover beautifully furnished rooms designed
+                to make your stay in Kovalam comfortable,
+                relaxing and memorable.
+
+            </p>
+
+        </div>
+
+
+        <!-- FIRST ROW -->
+
+        <div class="row g-5">
+
+
+            <!-- SUPERIOR ROOM -->
+
+            <div class="col-lg-6 col-md-6">
+
+                <div class="room-card">
+
+                    <div class="room-image-wrapper">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=85"
+                            class="room-img w-100"
+                            alt="Superior Room">
+
+                    </div>
+
+
+                    <div class="room-card-body">
+
+                        <h3>
+                            Superior Room
+                        </h3>
+
+
+                        <p>
+
+                            483 sq. ft. of refined coastal comfort with a spacious
+                            layout, mini-bar, work desk and an ocean-view setting.
+
+                        </p>
+
+
+                        <div class="room-links">
+
+                            <a
+                                href="superior-room.html"
+                                class="room-link">
+
+                                Learn More
+
+                                <i class="fa-solid fa-arrow-right ms-2"></i>
+
+                            </a>
+
+
+                            <a
+                                href="https://staahmax.staah.net/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="room-book-link">
+
+                                Book Now
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMPERIAL OCEAN VIEW ROOM -->
+
+            <div class="col-lg-6 col-md-6">
+
+                <div class="room-card">
+
+                    <div class="room-image-wrapper">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85"
+                            class="room-img w-100"
+                            alt="Imperial Ocean View Room">
+
+                    </div>
+
+
+                    <div class="room-card-body">
+
+                        <h3>
+                            Imperial Ocean View Room
+                        </h3>
+
+
+                        <p>
+
+                            482 sq. ft. private coastal haven with a plush king-size
+                            bed, rain shower, mini-bar, work desk and private balcony.
+
+                        </p>
+
+
+                        <div class="room-links">
+
+                            <a
+                                href="imperial-ocean-view.html"
+                                class="room-link">
+
+                                Learn More
+
+                                <i class="fa-solid fa-arrow-right ms-2"></i>
+
+                            </a>
+
+
+                            <a
+                                href="https://staahmax.staah.net/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="room-book-link">
+
+                                Book Now
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SECOND ROW -->
+
+        <div class="row g-5 mt-1">
+
+
+            <!-- REGALIA OCEAN VIEW SUITE -->
+
+            <div class="col-lg-6 col-md-6">
+
+                <div class="room-card">
+
+                    <div class="room-image-wrapper">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+                            class="room-img w-100"
+                            alt="Regalia Ocean View Suite">
+
+                    </div>
+
+
+                    <div class="room-card-body">
+
+                        <h3>
+                            Regalia Ocean View Suite
+                        </h3>
+
+
+                        <p>
+
+                            715 sq. ft. suite with airy interiors, bathtub, mini-bar,
+                            work desk and a private balcony with uninterrupted sea views.
+
+                        </p>
+
+
+                        <div class="room-links">
+
+                            <a
+                                href="regalia-suite.html"
+                                class="room-link">
+
+                                Learn More
+
+                                <i class="fa-solid fa-arrow-right ms-2"></i>
+
+                            </a>
+
+
+                            <a
+                                href="https://staahmax.staah.net/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="room-book-link">
+
+                                Book Now
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAMILY SUITE -->
+
+            <div class="col-lg-6 col-md-6">
+
+                <div class="room-card">
+
+                    <div class="room-image-wrapper">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85"
+                            class="room-img w-100"
+                            alt="Ocean View Two Bedroom Family Suite">
+
+                    </div>
+
+
+                    <div class="room-card-body">
+
+                        <h3>
+                            Family Ocean View Suite
+                        </h3>
+
+
+                        <p>
+
+                            Designed for comfort and privacy,
+                            this airy suite features two bedrooms
+                            and two bathrooms — one for parents
+                            and one for children. Modern and
+                            functional, it offers the perfect
+                            blend of family togetherness and
+                            personal space.
+
+                        </p>
+
+
+                        <div class="room-links">
+
+                            <a
+                                href="family-suite.html"
+                                class="room-link">
+
+                                Learn More
+
+                                <i class="fa-solid fa-arrow-right ms-2"></i>
+
+                            </a>
+
+
+                            <a
+                                href="https://staahmax.staah.net/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="room-book-link">
+
+                                Book Now
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DINING
+====================================================== -->
+
+<section id="dining">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+
+            <div class="col-lg-6">
+
+                <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85"
+                    class="dining-img"
+                    alt="Restaurant Dining">
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="dining-content">
+
+                    <div class="section-label">
+                        Dining
+                    </div>
+
+
+                    <h2 class="section-title mt-3 mb-4">
+
+                        Coastal Flavour
+                        <br>With A View
+
+                    </h2>
+
+
+                    <p class="section-text">
+
+                        Savour fresh flavours and sweeping Arabian Sea views
+                        at Coastal Flavour. Our menu brings together Asian
+                        specialities, fresh seafood, Kerala delicacies and
+                        international favourites.
+
+                    </p>
+
+
+                    <p class="section-text">
+
+                        Enjoy open-air breakfast, relaxed daytime dining,
+                        sunset meals and dinner — or arrange an intimate
+                        candlelight dinner in the gazebo or on your balcony.
+
+                    </p>
+
+
+                    <ul class="dining-list">
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Fresh Seafood & Kerala Delicacies
+                        </li>
+
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Asian & International Favourites
+                        </li>
+
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Vegetarian, Jain & Kids' Menus on Request
+                        </li>
+
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Chef-Curated Celebration Menus
+                        </li>
+
+                    </ul>
+
+
+                    <a
+                        href="dining.html"
+                        class="btn btn-gold mt-3">
+
+                        Discover Dining
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EXPERIENCE
+====================================================== -->
+
+<section
+    class="experience"
+    id="experience">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8">
+
+                <div class="section-label text-white">
+
+                    The Kovalam Experience
+
+                </div>
+
+
+                <h2 class="mt-3">
+
+                    Explore Kovalam
+                    At Your Own Pace
+
+                </h2>
+
+
+                <p class="mt-4">
+
+                    From scuba diving, parasailing and surfing to boat safaris,
+                    kayaking and guided cycling, our team can help curate a
+                    memorable coastal itinerary. Discover nearby Ponmudi,
+                    Kanyakumari, Trivandrum city and local landmarks too.
+
+                </p>
+
+
+                <a
+                    href="#contact"
+                    class="btn btn-gold mt-3">
+
+                    Plan Your Getaway
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     GALLERY
+====================================================== -->
+
+<section class="features-section" id="discover-kovalam">
+    <div class="container">
+        <div class="text-center mb-5">
+            <div class="section-label">Discover Kovalam</div>
+            <h2 class="section-title mt-3">The Coast, Close By</h2>
+            <p class="section-text mx-auto mt-3" style="max-width:760px;">
+                Ideally located for relaxed beach days, local culture and memorable excursions, the resort is a convenient base for exploring Kerala's coast.
+            </p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3"><div class="feature-box"><div class="feature-icon"><i class="fa-solid fa-umbrella-beach"></i></div><h4>Kovalam Beach</h4><p>Golden sands and a vibrant beachfront atmosphere, only 500 m away.</p></div></div>
+            <div class="col-md-6 col-lg-3"><div class="feature-box"><div class="feature-icon"><i class="fa-solid fa-tower-observation"></i></div><h4>Vizhinjam Lighthouse</h4><p>A striking coastal landmark with panoramic Arabian Sea views, 2 km away.</p></div></div>
+            <div class="col-md-6 col-lg-3"><div class="feature-box"><div class="feature-icon"><i class="fa-solid fa-water"></i></div><h4>Poovar Backwaters</h4><p>Explore serene waterways and lush mangrove landscapes on a boating experience.</p></div></div>
+            <div class="col-md-6 col-lg-3"><div class="feature-box"><div class="feature-icon"><i class="fa-solid fa-landmark"></i></div><h4>Trivandrum</h4><p>Discover city sights, the Sree Padmanabhaswamy Temple and Kerala's cultural character.</p></div></div>
+        </div>
+    </div>
+</section>
+
+<section
+    id="gallery"
+    class="pt-0">
+
+    <div class="container-fluid px-0">
+
+
+        <div class="text-center mb-5">
+
+            <div class="section-label">
+                Gallery
+            </div>
+
+
+            <h2 class="section-title mt-3">
+                Discover The Getaway
+            </h2>
+
+        </div>
+
+
+        <div class="row g-0">
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=900&q=85"
+                        alt="Kovalam Beach">
+
+                    <div class="gallery-overlay">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=900&q=85"
+                        alt="Resort">
+
+                    <div class="gallery-overlay">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=900&q=85"
+                        alt="Swimming Pool">
+
+                    <div class="gallery-overlay">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
+                        alt="Luxury Room">
+
+                    <div class="gallery-overlay">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TESTIMONIALS
+====================================================== -->
+
+<section class="testimonial-section">
+
+    <div class="container">
+
+
+        <div class="text-center mb-5">
+
+            <div class="section-label">
+                Testimonials
+            </div>
+
+
+            <h2 class="section-title mt-3">
+                Happy Guests
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-lg-4">
+
+                <div class="testimonial">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+
+                    <p>
+
+                        "Sea view from the room was just awesome.
+                        The room ambience was excellent and the
+                        complimentary breakfast was good."
+
+                    </p>
+
+
+                    <h5>
+                        Umar
+                    </h5>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="testimonial">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+
+                    <p>
+
+                        "We had an amazing stay at Getaway Beach
+                        Resort. The beach-facing suite was spacious
+                        and the view of the beach was beautiful."
+
+                    </p>
+
+
+                    <h5>
+                        Nandita Sundar
+                    </h5>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="testimonial">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+
+                    <p>
+
+                        "It was a nice experience. The hospitality
+                        provided by the hotel made our stay very
+                        enjoyable."
+
+                    </p>
+
+
+                    <h5>
+                        Mad B
+                    </h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+====================================================== -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="row g-0">
+
+
+            <div class="col-lg-6">
+
+                <div class="location-box">
+
+                    <div class="section-label">
+                        Visit Us
+                    </div>
+
+
+                    <h2 class="mt-3">
+                        Discover Kovalam
+                    </h2>
+
+
+                    <p class="mt-4">
+
+                        Located on Beach Road in Kovalam,
+                        Thiruvananthapuram, Kerala, Getaway Beach
+                        Resort is ideally situated near Kovalam Beach and
+                        Vizhinjam Harbour — just 500 m from the shoreline.
+
+                    </p>
+
+
+                    <div class="contact-detail">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Beach Road, Kovalam,
+                        Thiruvananthapuram,
+                        Kerala 695527
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        +91 94464 55591
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        0471 2485900
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        reservations@getawaybeachresort.com
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="p-4 p-lg-5">
+
+                    <div class="section-label">
+                        Get In Touch
+                    </div>
+
+
+                    <h2 class="section-title mt-3 mb-4">
+                        Plan Your Stay
+                    </h2>
+
+
+                    <form id="enquiryForm">
+
+                        <div class="row g-3">
+
+
+                            <div class="col-md-6">
+
+                                <input
+                                    type="text"
+                                    name="name"
+                                    class="form-control rounded-0 p-3"
+                                    placeholder="Your Name"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <input
+                                    type="email"
+                                    name="email"
+                                    class="form-control rounded-0 p-3"
+                                    placeholder="Email Address"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    class="form-control rounded-0 p-3"
+                                    placeholder="Phone Number">
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <input
+                                    type="date"
+                                    name="date"
+                                    class="form-control rounded-0 p-3">
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <textarea
+                                    name="message"
+                                    class="form-control rounded-0 p-3"
+                                    rows="5"
+                                    placeholder="Your Message"></textarea>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-gold">
+
+                                    Send Enquiry
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="row g-5">
+
+
+            <div class="col-lg-5">
+
+                <h3>
+                    Getaway
+                </h3>
+
+
+            <p class="mt-3">
+                Beach Road, Kovalam<br>
+                Thiruvananthapuram,<br>
+                Kerala 695527
+            </p>
+
+            <p>
+                Experience comfort, elegance and<br>
+                the beauty of the Arabian Sea at<br>
+                Getaway Beach Resort Kovalam.
+            </p>
+
+
+                <div class="social-icons mt-4">
+
+                    <a href="#" aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a href="#" aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-2">
+
+                <h5>
+                    Explore
+                </h5>
+
+
+                <ul class="mt-3">
+
+                    <li>
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#rooms">
+                            Accommodation
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="dining.html">
+                            Dining
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#experience">
+                            Experience
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-lg-5">
+
+                <h5>
+                    Reservations
+                </h5>
+
+
+                <p class="mt-3">
+
+                    Central Reservations:
+
+                    <br>
+
+                    +91 94464 55591
+
+                    <br><br>
+
+                    Resort:
+
+                    <br>
+
+                    0471 2485900
+
+                    <br>
+
+                    +91 94464 55591
+
+                    <br><br>
+
+                    reservations@getawaybeachresort.com
+
+                </p>
+
+
+                <a
+                    href="https://staahmax.staah.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-gold">
+
+                    Book Your Stay
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Getaway Beach Resort Kovalam.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     BOOTSTRAP JS
+====================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<script>
+
+    /* =====================================================
+       NAVBAR SCROLL EFFECT
+    ====================================================== */
+
+    const navbar = document.querySelector(".navbar");
+
+
+    function updateNavbarOnScroll() {
+
+        const isScrolled = window.scrollY > 50;
+
+        navbar.classList.toggle("scrolled", isScrolled);
+
+    }
+
+
+    window.addEventListener(
+        "scroll",
+        updateNavbarOnScroll
+    );
+
+
+    updateNavbarOnScroll();
+
+
+    /* =====================================================
+       MOBILE NAVBAR
+    ====================================================== */
+
+    document
+        .querySelectorAll(".navbar-nav .nav-link")
+        .forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                const navbarCollapse =
+                    document.querySelector(".navbar-collapse");
+
+                if (
+                    window.innerWidth < 992 &&
+                    navbarCollapse.classList.contains("show")
+                ) {
+
+                    const bsCollapse =
+                        bootstrap.Collapse.getOrCreateInstance(
+                            navbarCollapse
+                        );
+
+                    bsCollapse.hide();
+
+                }
+
+            });
+
+        });
+
+
+    /* =====================================================
+       CONTACT FORM
+    ====================================================== */
+
+    const enquiryForm = document.getElementById("enquiryForm");
+
+    enquiryForm.addEventListener("submit", async function(event) {
+
+        event.preventDefault();
+
+        const submitButton = enquiryForm.querySelector("button[type='submit']");
+        const originalText = submitButton.textContent;
+
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+
+        try {
+
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(Object.fromEntries(new FormData(enquiryForm)))
+            });
+
+            const result = await response.json();
+
+            if (!response.ok || !result.success) {
+                throw new Error(result.message || "Unable to send enquiry.");
+            }
+
+            enquiryForm.reset();
+            alert(result.message);
+
+        } catch (error) {
+
+            alert(error.message || "Unable to send enquiry. Please try again.");
+
+        } finally {
+
+            submitButton.disabled = false;
+            submitButton.textContent = originalText;
+
+        }
+
+    });
+
+</script>
+
+
+</body>
+
+</html>
+

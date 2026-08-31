@@ -1,0 +1,2349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coastal Flavour Dining | Getaway Beach Resort Kovalam</title>
+
+    <meta name="description"
+          content="Savour Coastal Flavour at Getaway Beach Resort Kovalam: fresh seafood, Kerala delicacies, Asian specialities and Arabian Sea views.">
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        rel="stylesheet">
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ====================================================== */
+
+        :root {
+
+            --primary: #084C73;
+            --secondary: #C49A5A;
+            --cream: #F8F5EF;
+            --dark: #063B5A;
+            --text: #444444;
+            --light-text: #777777;
+            --white: #ffffff;
+
+        }
+
+
+        /* =====================================================
+           GLOBAL
+        ====================================================== */
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            margin: 0;
+
+            font-family: 'Montserrat', sans-serif;
+
+            color: var(--text);
+
+            background: #ffffff;
+
+            line-height: 1.8;
+
+        }
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+
+            font-family: 'Playfair Display', serif;
+
+            font-weight: 500;
+
+        }
+
+
+        /* =====================================================
+           NAVBAR
+        ====================================================== */
+
+        .navbar {
+
+            background: var(--primary);
+
+            padding: 16px 0;
+
+            box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+
+        }
+
+
+        .navbar-brand {
+
+            color: white !important;
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 30px;
+
+            line-height: 0.85;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        .navbar-brand small {
+
+            display: block;
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-size: 7px;
+
+            letter-spacing: 4px;
+
+            text-align: center;
+
+            margin-top: 5px;
+
+        }
+
+
+        .navbar .nav-link {
+
+            color: white !important;
+
+            font-size: 10px;
+
+            letter-spacing: 1.8px;
+
+            text-transform: uppercase;
+
+            margin: 0 9px;
+
+            transition: 0.3s;
+
+        }
+
+
+        .navbar .nav-link:hover {
+
+            color: var(--secondary) !important;
+
+        }
+
+
+        .btn-gold {
+
+            background: var(--secondary);
+
+            color: white;
+
+            border: none;
+
+            border-radius: 0;
+
+            padding: 13px 26px;
+
+            font-size: 10px;
+
+            font-weight: 500;
+
+            letter-spacing: 1.7px;
+
+            text-transform: uppercase;
+
+            transition: 0.3s;
+
+        }
+
+
+        .btn-gold:hover {
+
+            background: #A98045;
+
+            color: white;
+
+            transform: translateY(-2px);
+
+        }
+
+
+        /* =====================================================
+           HERO
+        ====================================================== */
+
+        .dining-hero {
+
+            min-height: 78vh;
+
+            background:
+
+                linear-gradient(
+                    rgba(0,0,0,0.38),
+                    rgba(0,0,0,0.62)
+                ),
+
+                url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=2000&q=85")
+
+                center/cover no-repeat;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            color: white;
+
+        }
+
+
+        .hero-content {
+
+            max-width: 850px;
+
+            padding: 100px 20px 40px;
+
+        }
+
+
+        .hero-label {
+
+            font-size: 11px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 5px;
+
+            color: var(--secondary);
+
+            margin-bottom: 22px;
+
+        }
+
+
+        .dining-hero h1 {
+
+            font-size: clamp(58px, 8vw, 105px);
+
+            font-weight: 400;
+
+            line-height: 1;
+
+            margin-bottom: 28px;
+
+        }
+
+
+        .dining-hero p {
+
+            max-width: 650px;
+
+            margin: auto;
+
+            font-size: 14px;
+
+            font-weight: 300;
+
+            line-height: 1.9;
+
+        }
+
+
+        /* =====================================================
+           COMMON SECTIONS
+        ====================================================== */
+
+        section {
+
+            padding: 100px 0;
+
+        }
+
+
+        .section-label {
+
+            color: var(--secondary);
+
+            font-size: 10px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 4px;
+
+            font-weight: 500;
+
+        }
+
+
+        .section-title {
+
+            color: var(--primary);
+
+            font-size: clamp(43px, 5vw, 68px);
+
+            line-height: 1.08;
+
+            margin-top: 12px;
+
+        }
+
+
+        .section-text {
+
+            font-size: 14px;
+
+            color: #666;
+
+            line-height: 1.95;
+
+        }
+
+
+        /* =====================================================
+           INTRODUCTION
+        ====================================================== */
+
+        .intro-image {
+
+            width: 100%;
+
+            height: 560px;
+
+            object-fit: cover;
+
+        }
+
+
+        .intro-content {
+
+            padding: 25px 30px;
+
+        }
+
+
+        .intro-highlight {
+
+            border-left: 2px solid var(--secondary);
+
+            padding-left: 18px;
+
+            margin-top: 30px;
+
+        }
+
+
+        .intro-highlight strong {
+
+            font-family: 'Playfair Display', serif;
+
+            color: var(--primary);
+
+            font-size: 25px;
+
+            display: block;
+
+        }
+
+
+        .intro-highlight span {
+
+            font-size: 10px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.2px;
+
+            color: #777;
+
+        }
+
+
+        /* =====================================================
+           FOOD GALLERY
+        ====================================================== */
+
+        .gallery-section {
+
+            background: var(--cream);
+
+        }
+
+
+        .food-carousel {
+
+            margin-top: 50px;
+
+        }
+
+
+        .food-slide {
+
+            height: 580px;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+
+        .food-slide img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+        }
+
+
+        .food-caption {
+
+            position: absolute;
+
+            bottom: 0;
+
+            left: 0;
+
+            right: 0;
+
+            padding: 45px 35px 30px;
+
+            color: white;
+
+            background:
+
+                linear-gradient(
+                    transparent,
+                    rgba(0,0,0,0.8)
+                );
+
+        }
+
+
+        .food-caption h3 {
+
+            font-size: 32px;
+
+            margin-bottom: 5px;
+
+        }
+
+
+        .food-caption p {
+
+            margin: 0;
+
+            font-size: 12px;
+
+            opacity: 0.85;
+
+        }
+
+
+        .carousel-control-prev,
+        .carousel-control-next {
+
+            width: 55px;
+
+        }
+
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+
+            width: 35px;
+
+            height: 35px;
+
+            background-color: rgba(8,76,115,0.85);
+
+            background-size: 45%;
+
+            border-radius: 50%;
+
+        }
+
+
+        .carousel-indicators [data-bs-target] {
+
+            background-color: var(--secondary);
+
+        }
+
+
+        /* =====================================================
+           CUISINE
+        ====================================================== */
+
+        .cuisine-card {
+
+            background: white;
+
+            border: 1px solid #eee;
+
+            padding: 45px 30px;
+
+            height: 100%;
+
+            text-align: center;
+
+            transition: 0.4s;
+
+        }
+
+
+        .cuisine-card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+
+        }
+
+
+        .cuisine-icon {
+
+            width: 70px;
+
+            height: 70px;
+
+            border: 1px solid var(--secondary);
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            margin: 0 auto 22px;
+
+            color: var(--secondary);
+
+            font-size: 23px;
+
+        }
+
+
+        .cuisine-card h3 {
+
+            color: var(--primary);
+
+            font-size: 27px;
+
+        }
+
+
+        .cuisine-card p {
+
+            color: #777;
+
+            font-size: 12px;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =====================================================
+           MENU SECTION
+        ====================================================== */
+
+        .menu-section {
+
+            background: var(--primary);
+
+            color: white;
+
+        }
+
+
+        .menu-section .section-label {
+
+            color: var(--secondary);
+
+        }
+
+
+        .menu-section .section-title {
+
+            color: white;
+
+        }
+
+
+        .menu-section p {
+
+            color: rgba(255,255,255,0.75);
+
+            font-size: 13px;
+
+        }
+
+
+        .menu-box {
+
+            border: 1px solid rgba(255,255,255,0.25);
+
+            padding: 50px 35px;
+
+            text-align: center;
+
+        }
+
+
+        .menu-icon {
+
+            color: var(--secondary);
+
+            font-size: 45px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .menu-box h3 {
+
+            font-size: 30px;
+
+        }
+
+
+        .menu-box p {
+
+            font-size: 11px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        /* =====================================================
+           TIMINGS
+        ====================================================== */
+
+        .timing-section {
+
+            background: #ffffff;
+
+        }
+
+
+        .timing-card {
+
+            border-top: 2px solid var(--secondary);
+
+            padding: 30px 10px;
+
+            text-align: center;
+
+            height: 100%;
+
+        }
+
+
+        .timing-card i {
+
+            color: var(--secondary);
+
+            font-size: 25px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .timing-card h4 {
+
+            color: var(--primary);
+
+            font-size: 25px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .timing-card p {
+
+            color: #777;
+
+            font-size: 12px;
+
+            margin: 0;
+
+        }
+
+
+        /* =====================================================
+           EXPERIENCE BANNER
+        ====================================================== */
+
+        .restaurant-banner {
+
+            min-height: 600px;
+
+            background:
+
+                linear-gradient(
+                    rgba(0,0,0,0.42),
+                    rgba(0,0,0,0.68)
+                ),
+
+                url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=85")
+
+                center/cover no-repeat;
+
+            display: flex;
+
+            align-items: center;
+
+            color: white;
+
+        }
+
+
+        .restaurant-banner h2 {
+
+            font-size: clamp(50px, 6vw, 80px);
+
+            line-height: 1.05;
+
+        }
+
+
+        .restaurant-banner p {
+
+            max-width: 620px;
+
+            font-size: 14px;
+
+            font-weight: 300;
+
+            line-height: 1.9;
+
+        }
+
+
+        /* =====================================================
+           ENQUIRE
+        ====================================================== */
+
+        .enquire-section {
+
+            background: var(--cream);
+
+        }
+
+
+        .enquire-box {
+
+            background: white;
+
+            padding: 50px;
+
+            box-shadow: 0 15px 45px rgba(0,0,0,0.08);
+
+        }
+
+
+        .form-control {
+
+            border-radius: 0;
+
+            border: 1px solid #ddd;
+
+            padding: 14px;
+
+            font-size: 12px;
+
+        }
+
+
+        .form-control:focus {
+
+            border-color: var(--secondary);
+
+            box-shadow: none;
+
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ====================================================== */
+
+        footer {
+
+            background: var(--primary);
+
+            color: white;
+
+            padding: 70px 0 25px;
+
+        }
+
+
+        footer h3 {
+
+            font-size: 34px;
+
+        }
+
+
+        footer h5 {
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-size: 11px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        footer p,
+        footer li {
+
+            color: rgba(255,255,255,0.68);
+
+            font-size: 11px;
+
+            line-height: 1.9;
+
+        }
+
+
+        footer ul {
+
+            list-style: none;
+
+            padding: 0;
+
+        }
+
+
+        footer li {
+
+            margin-bottom: 7px;
+
+        }
+
+
+        footer a {
+
+            color: rgba(255,255,255,0.68);
+
+            text-decoration: none;
+
+            transition: 0.3s;
+
+        }
+
+
+        footer a:hover {
+
+            color: var(--secondary);
+
+        }
+
+
+        .social-icons a {
+
+            width: 40px;
+
+            height: 40px;
+
+            border-radius: 50%;
+
+            background: rgba(255,255,255,0.15);
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: white;
+
+            margin-right: 8px;
+
+        }
+
+
+        .social-icons a:hover {
+
+            background: var(--secondary);
+
+        }
+
+
+        .copyright {
+
+            border-top: 1px solid rgba(255,255,255,0.15);
+
+            margin-top: 45px;
+
+            padding-top: 20px;
+
+            text-align: center;
+
+            color: rgba(255,255,255,0.45);
+
+            font-size: 9px;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media(max-width: 991px) {
+
+            .navbar {
+
+                padding: 12px 0;
+
+            }
+
+            .navbar .nav-link {
+
+                margin: 5px 0;
+
+            }
+
+            .intro-image {
+
+                height: 450px;
+
+            }
+
+            .food-slide {
+
+                height: 480px;
+
+            }
+
+        }
+
+
+        @media(max-width: 767px) {
+
+            section {
+
+                padding: 70px 0;
+
+            }
+
+            .dining-hero {
+
+                min-height: 75vh;
+
+            }
+
+            .dining-hero h1 {
+
+                font-size: 54px;
+
+            }
+
+            .intro-content {
+
+                padding: 30px 0;
+
+            }
+
+            .intro-image {
+
+                height: 350px;
+
+            }
+
+            .food-slide {
+
+                height: 420px;
+
+            }
+
+            .food-caption h3 {
+
+                font-size: 25px;
+
+            }
+
+            .enquire-box {
+
+                padding: 30px 20px;
+
+            }
+
+        }
+
+</style>
+<style>
+    .navbar { padding: 14px 0; }
+    .navbar-brand { display: flex; align-items: center; }
+    .navbar-brand img { width: 220px; height: auto; display: block; transition: width .4s ease; }
+    .navbar.scrolled .navbar-brand img { width: 190px; }
+    @media (max-width: 767px) { .navbar-brand img { width: 155px; } .navbar.scrolled .navbar-brand img { width: 145px; } }
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+====================================================== -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+
+    <div class="container">
+
+        <a
+            class="navbar-brand"
+            href="index.html">
+
+            <img src="getaway-logo-white-cropped.png" alt="Getaway Beach Resort Kovalam Logo">
+
+        </a>
+
+
+        <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar">
+
+            <i class="fa-solid fa-bars text-white"></i>
+
+        </button>
+
+
+        <div
+            class="collapse navbar-collapse"
+            id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html#about">
+
+                        About
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html#rooms">
+
+                        Accommodation
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="dining.html">
+
+                        Dining
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html#experience">
+
+                        Experience
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html#gallery">
+
+                        Gallery
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html#contact">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+
+                    <a
+                        href="https://staahmax.staah.net/"
+                        target="_blank"
+                        class="btn btn-gold">
+
+                        Book Your Stay
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =====================================================
+     HERO
+====================================================== -->
+
+<section class="dining-hero">
+
+    <div class="hero-content">
+
+        <div class="hero-label">
+
+            The Getaway Cuisine
+
+        </div>
+
+
+        <h1>
+
+            Coastal Flavour Restaurant
+            
+
+        </h1>
+
+
+        <p>
+
+            Savour fresh seafood, Asian specialities, Kerala delicacies and
+            international favourites with sweeping views of the Arabian Sea.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INTRODUCTION
+====================================================== -->
+
+<section>
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+
+            <div class="col-lg-6">
+
+                <img
+                    src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1400&q=85"
+                    class="intro-image"
+                    alt="Getaway Beach Resort Restaurant">
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="intro-content">
+
+                    <div class="section-label">
+
+                        Dining At Getaway
+
+                    </div>
+
+
+                    <h2 class="section-title">
+
+                        Where Every Meal
+                        Becomes A Memory
+
+                    </h2>
+
+
+                    <p class="section-text mt-4">
+
+                        At Getaway Beach Resort Kovalam, dining is
+                        more than simply a meal. It is an opportunity
+                        to slow down, discover local flavours and
+                        enjoy delicious food in a relaxed coastal
+                        setting.
+
+                    </p>
+
+
+                    <p class="section-text">
+
+                        Our restaurant brings together the vibrant
+                        flavours of Kerala, much-loved Indian
+                        favourites and carefully selected dishes
+                        designed to complement your stay.
+
+                    </p>
+
+
+                    <div class="row mt-4">
+
+
+                        <div class="col-6">
+
+                            <div class="intro-highlight">
+
+                                <strong>
+                                    Kerala
+                                </strong>
+
+                                <span>
+                                    Traditional Flavours
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-6">
+
+                            <div class="intro-highlight">
+
+                                <strong>
+                                    Coastal
+                                </strong>
+
+                                <span>
+                                    Inspired Cuisine
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOD GALLERY
+====================================================== -->
+
+<section class="gallery-section">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <div class="section-label">
+
+                From Our Kitchen
+
+            </div>
+
+
+            <h2 class="section-title">
+
+                A Taste Of Getaway
+
+            </h2>
+
+
+            <p
+                class="section-text mx-auto mt-3"
+                style="max-width:650px;">
+
+                Explore a selection of culinary inspirations
+                served at our restaurant.
+
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             SWIPEABLE CAROUSEL
+        ================================================== -->
+
+        <div
+            id="foodCarousel"
+            class="carousel slide food-carousel"
+            data-bs-touch="true"
+            data-bs-ride="carousel">
+
+
+            <div class="carousel-indicators">
+
+                <button
+                    type="button"
+                    data-bs-target="#foodCarousel"
+                    data-bs-slide-to="0"
+                    class="active">
+                </button>
+
+                <button
+                    type="button"
+                    data-bs-target="#foodCarousel"
+                    data-bs-slide-to="1">
+                </button>
+
+                <button
+                    type="button"
+                    data-bs-target="#foodCarousel"
+                    data-bs-slide-to="2">
+                </button>
+
+                <button
+                    type="button"
+                    data-bs-target="#foodCarousel"
+                    data-bs-slide-to="3">
+                </button>
+
+            </div>
+
+
+            <div class="carousel-inner">
+
+
+                <!-- FOOD 1 -->
+
+                <div class="carousel-item active">
+
+                    <div class="food-slide">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1600&q=85"
+                            alt="Indian Cuisine">
+
+                        <div class="food-caption">
+
+                            <h3>
+                                Indian Favourites
+                            </h3>
+
+                            <p>
+                                Rich flavours, aromatic spices and
+                                comforting classics.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FOOD 2 -->
+
+                <div class="carousel-item">
+
+                    <div class="food-slide">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=1600&q=85"
+                            alt="Biryani">
+
+                        <div class="food-caption">
+
+                            <h3>
+                                Aromatic Biryani
+                            </h3>
+
+                            <p>
+                                Fragrant rice layered with beautifully
+                                balanced spices.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FOOD 3 -->
+
+                <div class="carousel-item">
+
+                    <div class="food-slide">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=1600&q=85"
+                            alt="Kerala Food">
+
+                        <div class="food-caption">
+
+                            <h3>
+                                Kerala Flavours
+                            </h3>
+
+                            <p>
+                                Inspired by the vibrant culinary
+                                traditions of God's Own Country.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FOOD 4 -->
+
+                <div class="carousel-item">
+
+                    <div class="food-slide">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1600&q=85"
+                            alt="Fresh Restaurant Dish">
+
+                        <div class="food-caption">
+
+                            <h3>
+                                Fresh & Delicious
+                            </h3>
+
+                            <p>
+                                Carefully prepared dishes for a
+                                memorable dining experience.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#foodCarousel"
+                data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+                <span class="visually-hidden">
+                    Previous
+                </span>
+
+            </button>
+
+
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#foodCarousel"
+                data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+                <span class="visually-hidden">
+                    Next
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CUISINES
+====================================================== -->
+
+<section>
+
+    <div class="container">
+
+
+        <div class="text-center mb-5">
+
+            <div class="section-label">
+
+                Our Cuisine
+
+            </div>
+
+
+            <h2 class="section-title">
+
+                Inspired By
+                The Coast
+
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- KERALA -->
+
+            <div class="col-lg-4">
+
+                <div class="cuisine-card">
+
+                    <div class="cuisine-icon">
+
+                        <i class="fa-solid fa-leaf"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Kerala Cuisine
+
+                    </h3>
+
+
+                    <p>
+
+                        Discover the distinctive flavours of Kerala
+                        through coconut, spices, fresh ingredients
+                        and traditional recipes.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- INDIAN -->
+
+            <div class="col-lg-4">
+
+                <div class="cuisine-card">
+
+                    <div class="cuisine-icon">
+
+                        <i class="fa-solid fa-bowl-food"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Indian Cuisine
+
+                    </h3>
+
+
+                    <p>
+
+                        Enjoy familiar Indian favourites prepared
+                        with aromatic spices and comforting flavours.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- COASTAL -->
+
+            <div class="col-lg-4">
+
+                <div class="cuisine-card">
+
+                    <div class="cuisine-icon">
+
+                        <i class="fa-solid fa-fish"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Coastal Flavours
+
+                    </h3>
+
+
+                    <p>
+
+                        Inspired by Kovalam's seaside setting,
+                        our coastal selections celebrate fresh,
+                        vibrant flavours.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MENU DOWNLOAD
+====================================================== -->
+
+<section class="menu-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+
+            <div class="col-lg-7">
+
+                <div class="section-label">
+
+                    Explore The Menu
+
+                </div>
+
+
+                <h2 class="section-title">
+
+                    Something Delicious
+                    For Everyone
+
+                </h2>
+
+
+                <p class="mt-4">
+
+                    From traditional Kerala favourites to Indian
+                    classics and refreshing beverages, explore our
+                    selection before your visit.
+
+                </p>
+
+
+                <a
+                    href="Getaway_Dining_Menu.pdf"
+                    download
+                    class="btn btn-gold mt-3">
+
+                    <i class="fa-solid fa-file-pdf me-2"></i>
+
+                    Download Menu
+
+                </a>
+
+            </div>
+
+
+            <div class="col-lg-5">
+
+                <div class="menu-box">
+
+                    <div class="menu-icon">
+
+                        <i class="fa-solid fa-utensils"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        The Coastal Flavour
+                        Restaurant
+
+                    </h3>
+
+
+                    <p>
+
+                        Kerala • Indian • Coastal
+
+                    </p>
+
+
+                    <a href="menu.html" class="btn btn-outline-light">
+                        View Menu
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TIMINGS
+====================================================== -->
+
+<section class="timing-section">
+
+    <div class="container">
+
+
+        <div class="text-center mb-5">
+
+            <div class="section-label">
+
+                Restaurant Hours
+
+            </div>
+
+
+            <h2 class="section-title">
+
+                Join Us For A Meal
+
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- BREAKFAST -->
+
+            <div class="col-md-4">
+
+                <div class="timing-card">
+
+                    <i class="fa-solid fa-mug-hot"></i>
+
+
+                    <h4>
+                        Breakfast
+                    </h4>
+
+
+                    <p>
+                        7:30 AM – 10:30 AM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- LUNCH -->
+
+            <div class="col-md-4">
+
+                <div class="timing-card">
+
+                    <i class="fa-solid fa-sun"></i>
+
+
+                    <h4>
+                        Lunch
+                    </h4>
+
+
+                    <p>
+                        12:30 PM – 3:30 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DINNER -->
+
+            <div class="col-md-4">
+
+                <div class="timing-card">
+
+                    <i class="fa-solid fa-moon"></i>
+
+
+                    <h4>
+                        Dinner
+                    </h4>
+
+
+                    <p>
+                        7:00 PM – 10:30 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RESTAURANT EXPERIENCE
+====================================================== -->
+
+<section class="restaurant-banner">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8">
+
+                <div class="section-label">
+
+                    The Restaurant Experience
+
+                </div>
+
+
+                <h2 class="mt-3">
+
+                    Good Food.
+                    <br>
+                    Beautiful Moments.
+
+                </h2>
+
+
+                <p class="mt-4">
+
+                    Whether you are beginning your morning with
+                    breakfast, enjoying a relaxed lunch or ending
+                    the day with dinner, let the flavours of
+                    Getaway become part of your Kovalam experience.
+
+                </p>
+
+
+                <a
+                    href="#enquire"
+                    class="btn btn-gold mt-3">
+
+                    Book / Enquire
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ENQUIRE
+====================================================== -->
+
+<section
+    class="enquire-section"
+    id="enquire">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-9">
+
+                <div class="enquire-box">
+
+                    <div class="text-center mb-5">
+
+                        <div class="section-label">
+
+                            Reservations & Enquiries
+
+                        </div>
+
+
+                        <h2 class="section-title">
+
+                            Plan Your
+                            Dining Experience
+
+                        </h2>
+
+
+                        <p class="section-text mt-3">
+
+                            Contact our team for restaurant
+                            reservations, special requests,
+                            dietary requirements or room service.
+
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        onsubmit="submitEnquiry(event)">
+
+
+                        <div class="row g-3">
+
+
+                            <div class="col-md-6">
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Your Name"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    placeholder="Phone Number"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Email Address">
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <input
+                                    type="date"
+                                    class="form-control">
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <select class="form-control">
+
+                                    <option>
+                                        Select Enquiry Type
+                                    </option>
+
+                                    <option>
+                                        Restaurant Reservation
+                                    </option>
+
+                                    <option>
+                                        Special Occasion
+                                    </option>
+
+                                    <option>
+                                        Dietary Request
+                                    </option>
+
+                                    <option>
+                                        Room Service
+                                    </option>
+
+                                    <option>
+                                        Other Enquiry
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <textarea
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="Your Message"></textarea>
+
+                            </div>
+
+
+                            <div class="col-12 text-center">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-gold">
+
+                                    Send Enquiry
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="row g-5">
+
+
+            <div class="col-lg-5">
+
+                <h3>
+                    Getaway
+                </h3>
+
+
+            <p class="mt-3">
+                Beach Road, Kovalam<br>
+                Thiruvananthapuram,<br>
+                Kerala 695527
+            </p>
+
+            <p>
+                Experience comfort, elegance and<br>
+                the beauty of the Arabian Sea at<br>
+                Getaway Beach Resort Kovalam.
+            </p>
+
+
+                <div class="social-icons mt-4">
+
+                    <a
+                        href="#"
+                        aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-2">
+
+                <h5>
+                    Explore
+                </h5>
+
+
+                <ul class="mt-3">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="index.html#about">
+                            About
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="index.html#rooms">
+                            Accommodation
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="dining.html">
+                            Dining
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="index.html#experience">
+                            Experience
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="index.html#gallery">
+                            Gallery
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="index.html#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-lg-5">
+
+                <h5>
+                    Restaurant & Reservations
+                </h5>
+
+
+                <p class="mt-3">
+
+                    +91 95 390 777 55
+
+                    <br>
+
+                    0471 2485900
+
+                    <br><br>
+
+                    getawaybeachresort@gmail.com
+
+                </p>
+
+
+                <a
+                    href="https://staahmax.staah.net/"
+                    target="_blank"
+                    class="btn btn-gold">
+
+                    Book Your Stay
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Getaway Beach Resort Kovalam.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     BOOTSTRAP JS
+====================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<script>
+
+    /* =====================================================
+       ENQUIRY FORM
+    ====================================================== */
+
+    function submitEnquiry(event) {
+
+        event.preventDefault();
+
+        alert(
+            "Thank you for your enquiry. Our restaurant team will contact you shortly."
+        );
+
+    }
+
+
+    /* =====================================================
+       MOBILE NAVBAR
+    ====================================================== */
+
+    document
+        .querySelectorAll(".navbar-nav .nav-link")
+        .forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                const navbar =
+                    document.querySelector(".navbar-collapse");
+
+                if (
+                    navbar &&
+                    navbar.classList.contains("show")
+                ) {
+
+                    const collapse =
+                        bootstrap.Collapse.getInstance(navbar);
+
+                    if (collapse) {
+
+                        collapse.hide();
+
+                    }
+
+                }
+
+            });
+
+        });
+
+</script>
+
+
+</body>
+
+</html>
+```

@@ -1,0 +1,2270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Superior Room | Getaway Beach Resort Kovalam</title>
+
+    <meta name="description"
+          content="Discover the Superior Room at Getaway Beach Resort Kovalam. Enjoy refined comfort, contemporary elegance and a relaxing stay near the Arabian Sea.">
+
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        /* =====================================================
+           ROOT COLORS
+        ====================================================== */
+
+        :root {
+
+            --primary: #084C73;
+            --secondary: #C49A5A;
+            --cream: #F8F5EF;
+            --dark: #063B5A;
+            --white: #FFFFFF;
+            --text: #444444;
+            --light-text: #777777;
+
+        }
+
+
+        /* =====================================================
+           GLOBAL
+        ====================================================== */
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            font-family: 'Montserrat', sans-serif;
+
+            color: var(--text);
+
+            background: #ffffff;
+
+            font-weight: 400;
+
+            letter-spacing: 0.2px;
+
+            line-height: 1.8;
+
+        }
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+
+            font-family: 'Playfair Display', serif;
+
+            font-weight: 500;
+
+        }
+
+
+        /* =====================================================
+           NAVBAR
+        ====================================================== */
+
+        .navbar {
+
+            transition: all 0.4s ease;
+
+            padding: 22px 0;
+
+            z-index: 1000;
+
+            background: transparent;
+
+        }
+
+
+        .navbar.scrolled {
+
+            background: var(--primary);
+
+            padding: 12px 0;
+
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.18);
+
+        }
+
+
+        .navbar-brand {
+
+            color: white !important;
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 31px;
+
+            font-weight: 500;
+
+            letter-spacing: 1px;
+
+            line-height: 0.85;
+
+        }
+
+
+        .navbar-brand small {
+
+            display: block;
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-size: 7px;
+
+            font-weight: 500;
+
+            letter-spacing: 4px;
+
+            text-align: center;
+
+            margin-top: 5px;
+
+        }
+
+
+        .navbar .nav-link {
+
+            font-family: 'Montserrat', sans-serif;
+
+            color: white !important;
+
+            font-size: 10px;
+
+            font-weight: 500;
+
+            letter-spacing: 1.8px;
+
+            margin: 0 9px;
+
+            text-transform: uppercase;
+
+            transition: 0.3s;
+
+        }
+
+
+        .navbar .nav-link:hover {
+
+            color: var(--secondary) !important;
+
+        }
+
+
+        .navbar-toggler:focus {
+
+            box-shadow: none;
+
+        }
+
+
+        /* =====================================================
+           GOLD BUTTON
+        ====================================================== */
+
+        .btn-gold {
+
+            font-family: 'Montserrat', sans-serif;
+
+            background: var(--secondary);
+
+            color: white;
+
+            border: none;
+
+            padding: 14px 28px;
+
+            letter-spacing: 1.8px;
+
+            font-size: 10px;
+
+            font-weight: 500;
+
+            text-transform: uppercase;
+
+            transition: 0.3s;
+
+            border-radius: 0;
+
+        }
+
+
+        .btn-gold:hover {
+
+            background: #A98045;
+
+            color: white;
+
+            transform: translateY(-2px);
+
+        }
+
+
+        /* =====================================================
+           PAGE HERO
+        ====================================================== */
+
+        .room-hero {
+
+            min-height: 65vh;
+
+            background:
+
+                linear-gradient(
+                    rgba(0, 0, 0, 0.38),
+                    rgba(0, 0, 0, 0.62)
+                ),
+
+                url("https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=2000&q=85")
+
+                center/cover no-repeat;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            color: white;
+
+        }
+
+
+        .room-hero-content {
+
+            padding-top: 70px;
+
+        }
+
+
+        .room-hero-label {
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-size: 10px;
+
+            letter-spacing: 5px;
+
+            text-transform: uppercase;
+
+            color: var(--secondary);
+
+            font-weight: 500;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .room-hero h1 {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: clamp(50px, 7vw, 90px);
+
+            font-weight: 400;
+
+            line-height: 1.05;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .room-hero p {
+
+            font-size: 13px;
+
+            font-weight: 300;
+
+            letter-spacing: 0.5px;
+
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ====================================================== */
+
+        .breadcrumb-section {
+
+            background: var(--cream);
+
+            padding: 15px 0;
+
+        }
+
+
+        .breadcrumb {
+
+            margin: 0;
+
+            font-size: 10px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.2px;
+
+        }
+
+
+        .breadcrumb a {
+
+            color: var(--primary);
+
+            text-decoration: none;
+
+        }
+
+
+        .breadcrumb .active {
+
+            color: var(--secondary);
+
+        }
+
+
+        /* =====================================================
+           MAIN ROOM SECTION
+        ====================================================== */
+
+        .room-main {
+
+            padding: 100px 0;
+
+        }
+
+
+        /* =====================================================
+           CAROUSEL
+        ====================================================== */
+
+        .room-carousel {
+
+            position: relative;
+
+            overflow: hidden;
+
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+
+        }
+
+
+        .room-carousel img {
+
+            width: 100%;
+
+            height: 570px;
+
+            object-fit: cover;
+
+        }
+
+
+        .carousel-control-prev,
+        .carousel-control-next {
+
+            width: 55px;
+
+            height: 55px;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            background: rgba(8, 76, 115, 0.8);
+
+            opacity: 1;
+
+            margin: 0 15px;
+
+        }
+
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+
+            width: 18px;
+
+            height: 18px;
+
+        }
+
+
+        .carousel-indicators {
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .carousel-indicators button {
+
+            width: 35px;
+
+            height: 3px;
+
+            border: none;
+
+            margin: 0 4px;
+
+        }
+
+
+        /* =====================================================
+           ROOM CONTENT
+        ====================================================== */
+
+        .room-content {
+
+            padding-left: 35px;
+
+        }
+
+
+        .section-label {
+
+            font-family: 'Montserrat', sans-serif;
+
+            color: var(--secondary);
+
+            text-transform: uppercase;
+
+            letter-spacing: 4px;
+
+            font-size: 10px;
+
+            font-weight: 500;
+
+        }
+
+
+        .room-content h2 {
+
+            font-family: 'Playfair Display', serif;
+
+            color: var(--primary);
+
+            font-size: clamp(42px, 5vw, 62px);
+
+            line-height: 1.1;
+
+            font-weight: 500;
+
+            margin-top: 15px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .room-content p {
+
+            color: #666;
+
+            font-size: 13px;
+
+            line-height: 1.9;
+
+        }
+
+
+        /* =====================================================
+           ROOM QUICK DETAILS
+        ====================================================== */
+
+        .room-quick-details {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin: 30px 0;
+
+        }
+
+
+        .quick-detail {
+
+            border: 1px solid #e5e5e5;
+
+            padding: 14px 18px;
+
+            min-width: 105px;
+
+            text-align: center;
+
+        }
+
+
+        .quick-detail i {
+
+            color: var(--secondary);
+
+            font-size: 17px;
+
+            display: block;
+
+            margin-bottom: 7px;
+
+        }
+
+
+        .quick-detail span {
+
+            display: block;
+
+            font-size: 9px;
+
+            color: #777;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        /* =====================================================
+           ROOM INFO
+        ====================================================== */
+
+        .room-info-section {
+
+            background: var(--cream);
+
+            padding: 100px 0;
+
+        }
+
+
+        .info-title {
+
+            font-family: 'Playfair Display', serif;
+
+            color: var(--primary);
+
+            font-size: 38px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .info-text {
+
+            font-size: 13px;
+
+            color: #666;
+
+            line-height: 1.9;
+
+        }
+
+
+        /* =====================================================
+           AMENITIES
+        ====================================================== */
+
+        .amenities-box {
+
+            background: white;
+
+            padding: 40px;
+
+            height: 100%;
+
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+        }
+
+
+        .amenity-list {
+
+            list-style: none;
+
+            padding: 0;
+
+            margin: 0;
+
+        }
+
+
+        .amenity-list li {
+
+            padding: 12px 0;
+
+            border-bottom: 1px solid #eeeeee;
+
+            font-size: 11.5px;
+
+            color: #555;
+
+        }
+
+
+        .amenity-list li:last-child {
+
+            border-bottom: none;
+
+        }
+
+
+        .amenity-list i {
+
+            color: var(--secondary);
+
+            width: 25px;
+
+        }
+
+
+        /* =====================================================
+           COMPLEMENTARY
+        ====================================================== */
+
+        .complimentary-section {
+
+            padding: 100px 0;
+
+        }
+
+
+        .complimentary-card {
+
+            text-align: center;
+
+            padding: 35px 20px;
+
+            height: 100%;
+
+            border: 1px solid #e8e8e8;
+
+            transition: 0.3s;
+
+        }
+
+
+        .complimentary-card:hover {
+
+            transform: translateY(-7px);
+
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+
+        }
+
+
+        .complimentary-icon {
+
+            width: 60px;
+
+            height: 60px;
+
+            border: 1px solid var(--secondary);
+
+            color: var(--secondary);
+
+            border-radius: 50%;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            margin: 0 auto 20px;
+
+            font-size: 18px;
+
+        }
+
+
+        .complimentary-card h4 {
+
+            font-family: 'Playfair Display', serif;
+
+            color: var(--primary);
+
+            font-size: 23px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .complimentary-card p {
+
+            font-size: 11px;
+
+            color: #777;
+
+            line-height: 1.8;
+
+            margin: 0;
+
+        }
+
+
+        /* =====================================================
+           BOOKING CTA
+        ====================================================== */
+
+        .booking-section {
+
+            background:
+
+                linear-gradient(
+                    rgba(8, 76, 115, 0.92),
+                    rgba(6, 59, 90, 0.95)
+                );
+
+            padding: 90px 0;
+
+            color: white;
+
+            text-align: center;
+
+        }
+
+
+        .booking-section h2 {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: clamp(42px, 5vw, 65px);
+
+            font-weight: 400;
+
+        }
+
+
+        .booking-section p {
+
+            max-width: 650px;
+
+            margin: 20px auto 30px;
+
+            font-size: 13px;
+
+            color: rgba(255,255,255,0.75);
+
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ====================================================== */
+
+        footer {
+
+            background: #084C73;
+
+            color: white;
+
+            padding: 75px 0 25px;
+
+        }
+
+
+        footer h3 {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 34px;
+
+            font-weight: 500;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        footer h5 {
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        footer p,
+        footer li {
+
+            color: rgba(255, 255, 255, 0.68);
+
+            font-size: 11px;
+
+            line-height: 1.9;
+
+        }
+
+
+        footer ul {
+
+            list-style: none;
+
+            padding: 0;
+
+        }
+
+
+        footer li {
+
+            margin-bottom: 7px;
+
+        }
+
+
+        footer li a {
+
+            color: rgba(255, 255, 255, 0.68);
+
+            text-decoration: none;
+
+            transition: 0.3s;
+
+        }
+
+
+        footer li a:hover {
+
+            color: var(--secondary);
+
+        }
+
+
+        .social-icons a {
+
+            width: 40px;
+
+            height: 40px;
+
+            background: rgba(255,255,255,0.18);
+
+            border-radius: 50%;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: white;
+
+            margin-right: 10px;
+
+            font-size: 16px;
+
+            transition: 0.3s;
+
+        }
+
+
+        .social-icons a:hover {
+
+            background: var(--secondary);
+
+            transform: translateY(-3px);
+
+        }
+
+
+        .copyright {
+
+            border-top: 1px solid rgba(255,255,255,0.15);
+
+            margin-top: 50px;
+
+            padding-top: 20px;
+
+            text-align: center;
+
+            color: rgba(255,255,255,0.5);
+
+            font-size: 9px;
+
+            letter-spacing: 1.2px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media(max-width: 991px) {
+
+            .navbar {
+
+                background: var(--primary);
+
+            }
+
+
+            .navbar .nav-link {
+
+                margin: 5px 0;
+
+            }
+
+
+            .room-content {
+
+                padding-left: 0;
+
+                padding-top: 45px;
+
+            }
+
+
+            .room-carousel img {
+
+                height: 450px;
+
+            }
+
+        }
+
+
+        @media(max-width: 767px) {
+
+            .room-hero {
+
+                min-height: 55vh;
+
+            }
+
+
+            .room-hero h1 {
+
+                font-size: 50px;
+
+            }
+
+
+            .room-main,
+            .room-info-section,
+            .complimentary-section {
+
+                padding: 70px 0;
+
+            }
+
+
+            .room-carousel img {
+
+                height: 350px;
+
+            }
+
+
+            .room-content h2 {
+
+                font-size: 45px;
+
+            }
+
+
+            .quick-detail {
+
+                flex: 1 1 40%;
+
+            }
+
+        }
+
+</style>
+<style>
+    .navbar { padding: 14px 0; }
+    .navbar-brand { display: flex; align-items: center; }
+    .navbar-brand img { width: 220px; height: auto; display: block; transition: width .4s ease; }
+    .navbar.scrolled .navbar-brand img { width: 190px; }
+    @media (max-width: 767px) { .navbar-brand img { width: 155px; } .navbar.scrolled .navbar-brand img { width: 145px; } }
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+====================================================== -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+
+            <img src="getaway-logo-white-cropped.png" alt="Getaway Beach Resort Kovalam Logo">
+
+        </a>
+
+
+        <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar">
+
+            <i class="fa-solid fa-bars text-white"></i>
+
+        </button>
+
+
+        <div
+            class="collapse navbar-collapse"
+            id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html#about">
+
+                        About
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html#rooms">
+
+                        Accommodation
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html#dining">
+
+                        Dining
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html#experience">
+
+                        Experience
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html#gallery">
+
+                        Gallery
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html#contact">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+
+                    <a
+                        href="https://staahmax.staah.net/"
+                        target="_blank"
+                        class="btn btn-gold">
+
+                        Book Your Stay
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     ROOM HERO
+====================================================== -->
+
+<section class="room-hero">
+
+    <div class="container">
+
+        <div class="room-hero-content">
+
+            <div class="room-hero-label">
+
+                Accommodation
+
+            </div>
+
+
+            <h1>
+
+                Superior Room
+
+            </h1>
+
+
+            <p>
+
+                Refined comfort · Contemporary elegance · 400 sq. ft.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BREADCRUMB
+====================================================== -->
+
+<div class="breadcrumb-section">
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+
+            <ol class="breadcrumb">
+
+                <li class="breadcrumb-item">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                </li>
+
+
+                <li class="breadcrumb-item">
+
+                    <a href="index.html#rooms">
+                        Accommodation
+                    </a>
+
+                </li>
+
+
+                <li class="breadcrumb-item active">
+
+                    Superior Room
+
+                </li>
+
+            </ol>
+
+        </nav>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     MAIN ROOM CONTENT
+====================================================== -->
+
+<section class="room-main">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+
+            <!-- =================================================
+                 IMAGE CAROUSEL
+            ================================================== -->
+
+            <div class="col-lg-7">
+
+                <div
+                    id="superiorRoomCarousel"
+                    class="carousel slide room-carousel"
+                    data-bs-ride="carousel">
+
+
+                    <!-- INDICATORS -->
+
+                    <div class="carousel-indicators">
+
+                        <button
+                            type="button"
+                            data-bs-target="#superiorRoomCarousel"
+                            data-bs-slide-to="0"
+                            class="active">
+                        </button>
+
+
+                        <button
+                            type="button"
+                            data-bs-target="#superiorRoomCarousel"
+                            data-bs-slide-to="1">
+                        </button>
+
+
+                        <button
+                            type="button"
+                            data-bs-target="#superiorRoomCarousel"
+                            data-bs-slide-to="2">
+                        </button>
+
+
+                        <button
+                            type="button"
+                            data-bs-target="#superiorRoomCarousel"
+                            data-bs-slide-to="3">
+                        </button>
+
+                    </div>
+
+
+                    <!-- SLIDES -->
+
+                    <div class="carousel-inner">
+
+
+                        <!-- IMAGE 1 -->
+
+                        <div class="carousel-item active">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1400&q=90"
+                                alt="Superior Room">
+
+                        </div>
+
+
+                        <!-- IMAGE 2 -->
+
+                        <div class="carousel-item">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1400&q=90"
+                                alt="Superior Room Interior">
+
+                        </div>
+
+
+                        <!-- IMAGE 3 -->
+
+                        <div class="carousel-item">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1400&q=90"
+                                alt="Luxury Hotel Room">
+
+                        </div>
+
+
+                        <!-- IMAGE 4 -->
+
+                        <div class="carousel-item">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1400&q=90"
+                                alt="Superior Room Bed">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PREVIOUS -->
+
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#superiorRoomCarousel"
+                        data-bs-slide="prev">
+
+                        <span
+                            class="carousel-control-prev-icon">
+                        </span>
+
+                        <span class="visually-hidden">
+                            Previous
+                        </span>
+
+                    </button>
+
+
+                    <!-- NEXT -->
+
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#superiorRoomCarousel"
+                        data-bs-slide="next">
+
+                        <span
+                            class="carousel-control-next-icon">
+                        </span>
+
+                        <span class="visually-hidden">
+                            Next
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ROOM DESCRIPTION
+            ================================================== -->
+
+            <div class="col-lg-5">
+
+                <div class="room-content">
+
+                    <div class="section-label">
+
+                        Superior Room
+
+                    </div>
+
+
+                    <h2>
+
+                        Refined Comfort
+                        By The Sea
+
+                    </h2>
+
+
+                    <p>
+
+                        Experience refined comfort and contemporary
+                        elegance in our spacious 400 sq. ft. Superior
+                        Room.
+
+                    </p>
+
+
+                    <p>
+
+                        Designed to blend modern aesthetics with warm
+                        luxury, the room offers an inviting ambience
+                        perfect for relaxation and rejuvenation during
+                        your stay at Getaway Beach Resort Kovalam.
+
+                    </p>
+
+
+                    <!-- QUICK DETAILS -->
+
+                    <div class="room-quick-details">
+
+
+                        <div class="quick-detail">
+
+                            <i class="fa-solid fa-maximize"></i>
+
+                            <span>
+                                400 Sq. Ft.
+                            </span>
+
+                        </div>
+
+
+                        <div class="quick-detail">
+
+                            <i class="fa-solid fa-bed"></i>
+
+                            <span>
+                                King Bed
+                            </span>
+
+                        </div>
+
+
+                        <div class="quick-detail">
+
+                            <i class="fa-solid fa-users"></i>
+
+                            <span>
+                                2 Guests
+                            </span>
+
+                        </div>
+
+
+                        <div class="quick-detail">
+
+                            <i class="fa-solid fa-wifi"></i>
+
+                            <span>
+                                Free Wi-Fi
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BOOK BUTTON -->
+
+                    <a
+                        href="https://staahmax.staah.net/"
+                        target="_blank"
+                        class="btn btn-gold">
+
+                        Book This Room
+
+                    </a>
+
+
+                    <a
+                        href="index.html#rooms"
+                        class="btn btn-outline-secondary rounded-0 ms-2">
+
+                        All Rooms
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ROOM DETAILS + AMENITIES
+====================================================== -->
+
+<section class="room-info-section">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+
+            <!-- ROOM DESCRIPTION -->
+
+            <div class="col-lg-6">
+
+                <div class="section-label">
+
+                    Room Details
+
+                </div>
+
+
+                <h2 class="info-title mt-3">
+
+                    Designed For
+                    A Relaxing Stay
+
+                </h2>
+
+
+                <p class="info-text">
+
+                    The Superior Room provides a comfortable
+                    and sophisticated retreat for guests looking
+                    to relax and enjoy the beauty of Kovalam.
+
+                </p>
+
+
+                <p class="info-text">
+
+                    Thoughtfully furnished with contemporary
+                    interiors, comfortable bedding and essential
+                    modern conveniences, the room creates a
+                    peaceful setting after a day spent exploring
+                    the coastline.
+
+                </p>
+
+
+                <p class="info-text">
+
+                    Whether you are visiting Kovalam for a
+                    relaxing beach holiday, a short getaway or
+                    a memorable Kerala experience, the Superior
+                    Room provides an inviting space to unwind.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- AMENITIES -->
+
+            <div class="col-lg-6">
+
+                <div class="amenities-box">
+
+                    <div class="section-label">
+
+                        Room Amenities
+
+                    </div>
+
+
+                    <h3 class="info-title mt-3">
+
+                        Everything You Need
+
+                    </h3>
+
+
+                    <ul class="amenity-list">
+
+
+                        <li>
+
+                            <i class="fa-solid fa-bed"></i>
+
+                            Comfortable King / Double Bed
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-wifi"></i>
+
+                            Complimentary Wi-Fi
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-snowflake"></i>
+
+                            Air Conditioning
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-tv"></i>
+
+                            Television
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-mug-hot"></i>
+
+                            Tea & Coffee Facilities
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-bath"></i>
+
+                            Attached Bathroom
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-shower"></i>
+
+                            Hot & Cold Water
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-door-open"></i>
+
+                            Spacious Wardrobe
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            Telephone
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-bell"></i>
+
+                            Room Service
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     COMPLEMENTARY DETAILS
+====================================================== -->
+
+<section class="complimentary-section">
+
+    <div class="container">
+
+
+        <div class="text-center mb-5">
+
+            <div class="section-label">
+
+                Complimentary
+
+            </div>
+
+
+            <h2 class="info-title">
+
+                Included With Your Stay
+
+            </h2>
+
+
+            <p
+                class="info-text mx-auto"
+                style="max-width:650px;">
+
+                Enjoy thoughtful complimentary services
+                designed to make your stay more comfortable
+                and memorable.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- BREAKFAST -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="complimentary-card">
+
+                    <div class="complimentary-icon">
+
+                        <i class="fa-solid fa-mug-hot"></i>
+
+                    </div>
+
+
+                    <h4>
+
+                        Breakfast
+
+                    </h4>
+
+
+                    <p>
+
+                        Start your day with a delicious
+                        complimentary breakfast during
+                        your stay.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- WIFI -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="complimentary-card">
+
+                    <div class="complimentary-icon">
+
+                        <i class="fa-solid fa-wifi"></i>
+
+                    </div>
+
+
+                    <h4>
+
+                        Wi-Fi
+
+                    </h4>
+
+
+                    <p>
+
+                        Stay connected with complimentary
+                        Wi-Fi access during your visit.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- WATER -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="complimentary-card">
+
+                    <div class="complimentary-icon">
+
+                        <i class="fa-solid fa-bottle-water"></i>
+
+                    </div>
+
+
+                    <h4>
+
+                        Drinking Water
+
+                    </h4>
+
+
+                    <p>
+
+                        Complimentary drinking water
+                        provided for your convenience.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- POOL -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="complimentary-card">
+
+                    <div class="complimentary-icon">
+
+                        <i class="fa-solid fa-water-ladder"></i>
+
+                    </div>
+
+
+                    <h4>
+
+                        Pool Access
+
+                    </h4>
+
+
+                    <p>
+
+                        Enjoy access to the resort swimming
+                        pool during your stay.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BOOKING CTA
+====================================================== -->
+
+<section class="booking-section">
+
+    <div class="container">
+
+        <div class="section-label text-white">
+
+            Your Getaway Awaits
+
+        </div>
+
+
+        <h2 class="mt-3">
+
+            Make Your Stay
+            Unforgettable
+
+        </h2>
+
+
+        <p>
+
+            Relax in the comfort of our Superior Room and
+            experience the beauty and serenity of Kovalam.
+
+        </p>
+
+
+        <a
+            href="https://staahmax.staah.net/"
+            target="_blank"
+            class="btn btn-gold">
+
+            Book Your Stay
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="row g-5">
+
+
+            <!-- HOTEL -->
+
+            <div class="col-lg-5">
+
+                <h3>
+
+                    Getaway
+
+                </h3>
+
+
+                <p class="mt-3">
+
+                    Beach Road, Kovalam,
+                    Thiruvananthapuram,
+                    Kerala 695527
+
+                </p>
+
+
+                <p>
+
+                    Experience comfort, elegance and
+                    the beauty of the Arabian Sea at
+                    Getaway Beach Resort Kovalam.
+
+                </p>
+
+
+                <div class="social-icons mt-4">
+
+                    <a
+                        href="#"
+                        aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- EXPLORE -->
+
+            <div class="col-lg-2">
+
+                <h5>
+
+                    Explore
+
+                </h5>
+
+
+                <ul class="mt-3">
+
+                    <li>
+
+                        <a href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="index.html#about">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="index.html#rooms">
+
+                            Accommodation
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="index.html#dining">
+
+                            Dining
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="index.html#experience">
+
+                            Experience
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="index.html#gallery">
+
+                            Gallery
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="index.html#contact">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- RESERVATIONS -->
+
+            <div class="col-lg-5">
+
+                <h5>
+
+                    Reservations
+
+                </h5>
+
+
+                <p class="mt-3">
+
+                    Central Reservations:
+
+                    <br>
+
+                    +91 95 390 777 55
+
+                    <br><br>
+
+                    Resort:
+
+                    <br>
+
+                    0471 2485900
+
+                    <br>
+
+                    +91 94 464 555 91
+
+                    <br><br>
+
+                    reservations@getawaybeachresort.com
+
+                </p>
+
+
+                <a
+                    href="https://staahmax.staah.net/"
+                    target="_blank"
+                    class="btn btn-gold">
+
+                    Book Your Stay
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="copyright">
+
+            © 2026 Getaway Beach Resort Kovalam.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     BOOTSTRAP JS
+====================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+<script>
+
+    /* =====================================================
+       NAVBAR SCROLL EFFECT
+    ====================================================== */
+
+    window.addEventListener("scroll", function () {
+
+        const navbar =
+            document.querySelector(".navbar");
+
+        if (window.scrollY > 50) {
+
+            navbar.classList.add("scrolled");
+
+        } else {
+
+            navbar.classList.remove("scrolled");
+
+        }
+
+    });
+
+
+
+    /* =====================================================
+       MOBILE NAVBAR
+    ====================================================== */
+
+    document
+        .querySelectorAll(".navbar-nav .nav-link")
+        .forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                const navbar =
+                    document.querySelector(".navbar-collapse");
+
+                if (navbar.classList.contains("show")) {
+
+                    const bsCollapse =
+                        bootstrap.Collapse.getInstance(navbar);
+
+                    if (bsCollapse) {
+
+                        bsCollapse.hide();
+
+                    }
+
+                }
+
+            });
+
+        });
+
+</script>
+
+
+</body>
+
+</html>
