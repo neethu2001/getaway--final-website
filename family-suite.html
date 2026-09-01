@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ocean View Two-Bedroom Family Suite | Getaway Beach Resort Kovalam</title>
+    <title>Family Ocean View Suite | Getaway Beach Resort Kovalam</title>
 
     <meta name="description"
-          content="Experience the Ocean View Two-Bedroom Family Suite at Getaway Beach Resort Kovalam. Spacious family accommodation with two bedrooms, two bathrooms and beautiful ocean views.">
+          content="Discover the Family Ocean View Suite at Getaway Beach Resort Kovalam. Enjoy generous space, ocean views and comfortable privacy for memorable family getaways.">
 
     <!-- =====================================================
          BOOTSTRAP
@@ -33,7 +33,8 @@
          GOOGLE FONTS
     ====================================================== -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
     <link rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -109,14 +110,24 @@
 
         .navbar {
 
-            background: var(--primary);
+            transition: all 0.4s ease;
 
-            padding: 15px 0;
-
-            box-shadow:
-                0 4px 25px rgba(0, 0, 0, 0.15);
+            padding: 22px 0;
 
             z-index: 1000;
+
+            background: transparent;
+
+        }
+
+
+        .navbar.scrolled {
+
+            background: var(--primary);
+
+            padding: 12px 0;
+
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.18);
 
         }
 
@@ -240,12 +251,12 @@
 
         .room-hero {
 
-            min-height: 55vh;
+            min-height: 65vh;
 
             background:
 
                 linear-gradient(
-                    rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.38),
                     rgba(0, 0, 0, 0.62)
                 ),
 
@@ -263,14 +274,12 @@
 
             color: white;
 
-            padding-top: 80px;
-
         }
 
 
         .room-hero-content {
 
-            max-width: 900px;
+            padding-top: 70px;
 
         }
 
@@ -279,15 +288,15 @@
 
             font-family: 'Montserrat', sans-serif;
 
-            text-transform: uppercase;
+            font-size: 10px;
 
             letter-spacing: 5px;
 
-            font-size: 10px;
-
-            font-weight: 500;
+            text-transform: uppercase;
 
             color: var(--secondary);
+
+            font-weight: 500;
 
             margin-bottom: 20px;
 
@@ -298,7 +307,7 @@
 
             font-family: 'Playfair Display', serif;
 
-            font-size: clamp(48px, 7vw, 82px);
+            font-size: clamp(50px, 7vw, 90px);
 
             font-weight: 400;
 
@@ -311,15 +320,140 @@
 
         .room-hero p {
 
-            max-width: 650px;
-
-            margin: auto;
-
             font-size: 13px;
 
             font-weight: 300;
 
-            line-height: 1.9;
+            letter-spacing: 0.5px;
+
+        }
+
+
+        /* =====================================================
+           BREADCRUMB
+        ====================================================== */
+
+        .breadcrumb-section {
+
+            background: var(--cream);
+
+            padding: 15px 0;
+
+        }
+
+
+        .breadcrumb {
+
+            margin: 0;
+
+            font-size: 10px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.2px;
+
+        }
+
+
+        .breadcrumb a {
+
+            color: var(--primary);
+
+            text-decoration: none;
+
+        }
+
+
+        .breadcrumb .active {
+
+            color: var(--secondary);
+
+        }
+
+
+        /* =====================================================
+           MAIN ROOM SECTION
+        ====================================================== */
+
+        .room-main {
+
+            padding: 100px 0;
+
+        }
+
+
+        /* =====================================================
+           CAROUSEL
+        ====================================================== */
+
+        .room-carousel {
+
+            position: relative;
+
+            overflow: hidden;
+
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+
+        }
+
+
+        .room-carousel img {
+
+            width: 100%;
+
+            height: 570px;
+
+            object-fit: cover;
+
+        }
+
+
+        .carousel-control-prev,
+        .carousel-control-next {
+
+            width: 55px;
+
+            height: 55px;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            background: rgba(8, 76, 115, 0.8);
+
+            opacity: 1;
+
+            margin: 0 15px;
+
+        }
+
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+
+            width: 18px;
+
+            height: 18px;
+
+        }
+
+
+        .carousel-indicators {
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .carousel-indicators button {
+
+            width: 35px;
+
+            height: 3px;
+
+            border: none;
+
+            margin: 0 4px;
 
         }
 
@@ -328,9 +462,9 @@
            ROOM CONTENT
         ====================================================== */
 
-        .room-section {
+        .room-content {
 
-            padding: 100px 0;
+            padding-left: 35px;
 
         }
 
@@ -352,162 +486,99 @@
         }
 
 
-        .section-title {
+        .room-content h2 {
 
             font-family: 'Playfair Display', serif;
 
-            font-size: clamp(42px, 5vw, 65px);
+            color: var(--primary);
+
+            font-size: clamp(42px, 5vw, 62px);
+
+            line-height: 1.1;
 
             font-weight: 500;
 
-            color: var(--primary);
+            margin-top: 15px;
 
-            line-height: 1.1;
+            margin-bottom: 25px;
 
         }
 
 
-        .section-text {
+        .room-content p {
 
             color: #666;
 
             font-size: 13px;
 
-            line-height: 1.95;
+            line-height: 1.9;
 
         }
 
 
         /* =====================================================
-           IMAGE CAROUSEL
+           ROOM QUICK DETAILS
         ====================================================== */
 
-        .room-carousel {
-
-            box-shadow:
-                0 15px 45px rgba(0, 0, 0, 0.12);
-
-        }
-
-
-        .room-carousel .carousel-item {
-
-            height: 580px;
-
-        }
-
-
-        .room-carousel img {
-
-            width: 100%;
-
-            height: 100%;
-
-            object-fit: cover;
-
-        }
-
-
-        .carousel-control-prev,
-        .carousel-control-next {
-
-            width: 12%;
-
-        }
-
-
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-
-            width: 45px;
-
-            height: 45px;
-
-            background-color: rgba(8, 76, 115, 0.85);
-
-            background-size: 45%;
-
-            border-radius: 50%;
-
-            padding: 12px;
-
-        }
-
-
-        /* =====================================================
-           ROOM INFO BOX
-        ====================================================== */
-
-        .room-info-box {
-
-            background: var(--cream);
-
-            padding: 35px;
-
-            margin-top: 25px;
-
-        }
-
-
-        .room-info-item {
+        .room-quick-details {
 
             display: flex;
 
-            align-items: center;
+            flex-wrap: wrap;
 
-            gap: 15px;
+            gap: 12px;
+
+            margin: 30px 0;
 
         }
 
 
-        .room-info-item i {
+        .quick-detail {
 
-            color: var(--secondary);
+            border: 1px solid #e5e5e5;
 
-            font-size: 20px;
+            padding: 14px 18px;
 
-            width: 25px;
+            min-width: 105px;
 
             text-align: center;
 
         }
 
 
-        .room-info-item strong {
+        .quick-detail i {
+
+            color: var(--secondary);
+
+            font-size: 17px;
 
             display: block;
 
-            font-family: 'Montserrat', sans-serif;
-
-            font-size: 9px;
-
-            text-transform: uppercase;
-
-            letter-spacing: 1.3px;
-
-            color: #777;
+            margin-bottom: 7px;
 
         }
 
 
-        .room-info-item span {
+        .quick-detail span {
 
             display: block;
 
-            font-family: 'Playfair Display', serif;
+            font-size: 9px;
 
-            font-size: 18px;
+            color: #777;
 
-            color: var(--primary);
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
 
         }
 
 
         /* =====================================================
-           HIGHLIGHTS
+           ROOM INFO
         ====================================================== */
 
-        .highlights-section {
+        .room-info-section {
 
             background: var(--cream);
 
@@ -516,32 +587,123 @@
         }
 
 
-        .highlight-box {
+        .info-title {
+
+            font-family: 'Playfair Display', serif;
+
+            color: var(--primary);
+
+            font-size: 38px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .info-text {
+
+            font-size: 13px;
+
+            color: #666;
+
+            line-height: 1.9;
+
+        }
+
+
+        /* =====================================================
+           AMENITIES
+        ====================================================== */
+
+        .amenities-box {
 
             background: white;
 
-            padding: 35px 25px;
+            padding: 40px;
 
             height: 100%;
 
-            transition: 0.3s;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+        }
+
+
+        .amenity-list {
+
+            list-style: none;
+
+            padding: 0;
+
+            margin: 0;
+
+        }
+
+
+        .amenity-list li {
+
+            padding: 12px 0;
+
+            border-bottom: 1px solid #eeeeee;
+
+            font-size: 11.5px;
+
+            color: #555;
+
+        }
+
+
+        .amenity-list li:last-child {
+
+            border-bottom: none;
+
+        }
+
+
+        .amenity-list i {
+
+            color: var(--secondary);
+
+            width: 25px;
+
+        }
+
+
+        /* =====================================================
+           COMPLEMENTARY
+        ====================================================== */
+
+        .complimentary-section {
+
+            padding: 100px 0;
+
+        }
+
+
+        .complimentary-card {
 
             text-align: center;
 
+            padding: 35px 20px;
+
+            height: 100%;
+
+            border: 1px solid #e8e8e8;
+
+            transition: 0.3s;
+
         }
 
 
-        .highlight-box:hover {
+        .complimentary-card:hover {
 
             transform: translateY(-7px);
 
-            box-shadow:
-                0 15px 35px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
 
         }
 
 
-        .highlight-icon {
+        .complimentary-icon {
 
             width: 60px;
 
@@ -549,24 +711,26 @@
 
             border: 1px solid var(--secondary);
 
+            color: var(--secondary);
+
             border-radius: 50%;
 
             display: flex;
 
-            align-items: center;
-
             justify-content: center;
+
+            align-items: center;
 
             margin: 0 auto 20px;
 
-            color: var(--secondary);
-
-            font-size: 19px;
+            font-size: 18px;
 
         }
 
 
-        .highlight-box h4 {
+        .complimentary-card h4 {
+
+            font-family: 'Playfair Display', serif;
 
             color: var(--primary);
 
@@ -577,7 +741,7 @@
         }
 
 
-        .highlight-box p {
+        .complimentary-card p {
 
             font-size: 11px;
 
@@ -591,122 +755,6 @@
 
 
         /* =====================================================
-           AMENITIES
-        ====================================================== */
-
-        .amenities-section {
-
-            padding: 100px 0;
-
-        }
-
-
-        .amenities-list {
-
-            list-style: none;
-
-            padding: 0;
-
-            margin: 0;
-
-        }
-
-
-        .amenities-list li {
-
-            border-bottom: 1px solid #e8e8e8;
-
-            padding: 15px 0;
-
-            font-size: 12px;
-
-            color: #555;
-
-        }
-
-
-        .amenities-list li i {
-
-            color: var(--secondary);
-
-            margin-right: 12px;
-
-            width: 18px;
-
-        }
-
-
-        /* =====================================================
-           COMPLEMENTARY
-        ====================================================== */
-
-        .complementary-box {
-
-            background: var(--primary);
-
-            color: white;
-
-            padding: 55px;
-
-        }
-
-
-        .complementary-box h2 {
-
-            font-size: 45px;
-
-            font-weight: 400;
-
-            color: white;
-
-            line-height: 1.15;
-
-        }
-
-
-        .complementary-box p {
-
-            color: rgba(255,255,255,0.75);
-
-            font-size: 12px;
-
-            line-height: 1.9;
-
-        }
-
-
-        .complementary-list {
-
-            list-style: none;
-
-            padding: 0;
-
-            margin: 25px 0 0;
-
-        }
-
-
-        .complementary-list li {
-
-            margin-bottom: 12px;
-
-            font-size: 11px;
-
-            color: rgba(255,255,255,0.85);
-
-        }
-
-
-        .complementary-list i {
-
-            color: var(--secondary);
-
-            margin-right: 10px;
-
-        }
-
-
-        /* =====================================================
            BOOKING CTA
         ====================================================== */
 
@@ -715,26 +763,22 @@
             background:
 
                 linear-gradient(
-                    rgba(8, 76, 115, 0.88),
-                    rgba(8, 76, 115, 0.94)
-                ),
+                    rgba(8, 76, 115, 0.92),
+                    rgba(6, 59, 90, 0.95)
+                );
 
-                url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=85")
-
-                center/cover no-repeat;
-
-            padding: 100px 0;
-
-            text-align: center;
+            padding: 90px 0;
 
             color: white;
+
+            text-align: center;
 
         }
 
 
         .booking-section h2 {
 
-            color: white;
+            font-family: 'Playfair Display', serif;
 
             font-size: clamp(42px, 5vw, 65px);
 
@@ -762,7 +806,7 @@
 
         footer {
 
-            background: #063B5A;
+            background: #084C73;
 
             color: white;
 
@@ -778,6 +822,8 @@
             font-size: 34px;
 
             font-weight: 500;
+
+            letter-spacing: 1px;
 
         }
 
@@ -800,7 +846,7 @@
         footer p,
         footer li {
 
-            color: rgba(255,255,255,0.68);
+            color: rgba(255, 255, 255, 0.68);
 
             font-size: 11px;
 
@@ -827,7 +873,7 @@
 
         footer li a {
 
-            color: rgba(255,255,255,0.68);
+            color: rgba(255, 255, 255, 0.68);
 
             text-decoration: none;
 
@@ -908,21 +954,30 @@
 
             .navbar {
 
-                padding: 12px 0;
+                background: var(--primary);
 
             }
 
 
-            .room-carousel .carousel-item {
+            .navbar .nav-link {
+
+                margin: 5px 0;
+
+            }
+
+
+            .room-content {
+
+                padding-left: 0;
+
+                padding-top: 45px;
+
+            }
+
+
+            .room-carousel img {
 
                 height: 450px;
-
-            }
-
-
-            .complementary-box {
-
-                padding: 40px;
 
             }
 
@@ -933,58 +988,44 @@
 
             .room-hero {
 
-                min-height: 65vh;
+                min-height: 55vh;
 
             }
 
 
             .room-hero h1 {
 
-                font-size: 48px;
+                font-size: 50px;
 
             }
 
 
-            .room-carousel .carousel-item {
-
-                height: 330px;
-
-            }
-
-
-            .room-section,
-            .amenities-section,
-            .highlights-section {
+            .room-main,
+            .room-info-section,
+            .complimentary-section {
 
                 padding: 70px 0;
 
             }
 
 
-            .section-title {
+            .room-carousel img {
 
-                font-size: 44px;
-
-            }
-
-
-            .complementary-box {
-
-                padding: 35px 25px;
+                height: 350px;
 
             }
 
 
-            .complementary-box h2 {
+            .room-content h2 {
 
-                font-size: 40px;
+                font-size: 45px;
 
             }
 
 
-            .navbar-brand {
+            .quick-detail {
 
-                font-size: 26px;
+                flex: 1 1 40%;
 
             }
 
@@ -1037,10 +1078,15 @@
 
             <ul class="navbar-nav ms-auto align-items-lg-center">
 
+
                 <li class="nav-item">
 
-                    <a class="nav-link" href="index.html">
+                    <a
+                        class="nav-link"
+                        href="index.html">
+
                         Home
+
                     </a>
 
                 </li>
@@ -1048,8 +1094,12 @@
 
                 <li class="nav-item">
 
-                    <a class="nav-link" href="index.html#about">
+                    <a
+                        class="nav-link"
+                        href="index.html#about">
+
                         About
+
                     </a>
 
                 </li>
@@ -1057,8 +1107,12 @@
 
                 <li class="nav-item">
 
-                    <a class="nav-link" href="index.html#rooms">
+                    <a
+                        class="nav-link"
+                        href="index.html#rooms">
+
                         Accommodation
+
                     </a>
 
                 </li>
@@ -1066,8 +1120,12 @@
 
                 <li class="nav-item">
 
-                    <a class="nav-link" href="index.html#dining">
+                    <a
+                        class="nav-link"
+                        href="index.html#dining">
+
                         Dining
+
                     </a>
 
                 </li>
@@ -1075,8 +1133,12 @@
 
                 <li class="nav-item">
 
-                    <a class="nav-link" href="index.html#experience">
+                    <a
+                        class="nav-link"
+                        href="index.html#experience">
+
                         Experience
+
                     </a>
 
                 </li>
@@ -1084,8 +1146,12 @@
 
                 <li class="nav-item">
 
-                    <a class="nav-link" href="index.html#gallery">
+                    <a
+                        class="nav-link"
+                        href="index.html#gallery">
+
                         Gallery
+
                     </a>
 
                 </li>
@@ -1093,8 +1159,12 @@
 
                 <li class="nav-item">
 
-                    <a class="nav-link" href="index.html#contact">
+                    <a
+                        class="nav-link"
+                        href="index.html#contact">
+
                         Contact
+
                     </a>
 
                 </li>
@@ -1122,6 +1192,7 @@
 </nav>
 
 
+
 <!-- =====================================================
      ROOM HERO
 ====================================================== -->
@@ -1134,25 +1205,21 @@
 
             <div class="room-hero-label">
 
-                Family Accommodation
+                Accommodation
 
             </div>
 
 
             <h1>
 
-                Ocean View
-                <br>
-                Two-Bedroom Family Suite
+                Family Ocean View Suite
 
             </h1>
 
 
             <p>
 
-                Spacious family accommodation designed to bring
-                together comfort, privacy and beautiful views
-                of the Arabian Sea.
+                Heritage comfort · Two bedrooms · 1,180 sq. ft.
 
             </p>
 
@@ -1163,15 +1230,62 @@
 </section>
 
 
+
 <!-- =====================================================
-     ROOM DETAILS + IMAGE CAROUSEL
+     BREADCRUMB
 ====================================================== -->
 
-<section class="room-section">
+<div class="breadcrumb-section">
 
     <div class="container">
 
-        <div class="row g-5 align-items-start">
+        <nav aria-label="breadcrumb">
+
+            <ol class="breadcrumb">
+
+                <li class="breadcrumb-item">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                </li>
+
+
+                <li class="breadcrumb-item">
+
+                    <a href="index.html#rooms">
+                        Accommodation
+                    </a>
+
+                </li>
+
+
+                <li class="breadcrumb-item active">
+
+                    Family Ocean View Suite
+
+                </li>
+
+            </ol>
+
+        </nav>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     MAIN ROOM CONTENT
+====================================================== -->
+
+<section class="room-main">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
 
 
             <!-- =================================================
@@ -1181,10 +1295,47 @@
             <div class="col-lg-7">
 
                 <div
-                    id="familyRoomCarousel"
+                    id="familySuiteCarousel"
                     class="carousel slide room-carousel"
                     data-bs-ride="carousel">
 
+
+                    <!-- INDICATORS -->
+
+                    <div class="carousel-indicators">
+
+                        <button
+                            type="button"
+                            data-bs-target="#familySuiteCarousel"
+                            data-bs-slide-to="0"
+                            class="active">
+                        </button>
+
+
+                        <button
+                            type="button"
+                            data-bs-target="#familySuiteCarousel"
+                            data-bs-slide-to="1">
+                        </button>
+
+
+                        <button
+                            type="button"
+                            data-bs-target="#familySuiteCarousel"
+                            data-bs-slide-to="2">
+                        </button>
+
+
+                        <button
+                            type="button"
+                            data-bs-target="#familySuiteCarousel"
+                            data-bs-slide-to="3">
+                        </button>
+
+                    </div>
+
+
+                    <!-- SLIDES -->
 
                     <div class="carousel-inner">
 
@@ -1195,7 +1346,7 @@
 
                             <img
                                 src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=85"
-                                alt="Ocean View Family Suite">
+                                alt="Family Ocean View Suite">
 
                         </div>
 
@@ -1206,7 +1357,7 @@
 
                             <img
                                 src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85"
-                                alt="Family Suite Interior">
+                                alt="Family Ocean View Suite Interior">
 
                         </div>
 
@@ -1217,7 +1368,7 @@
 
                             <img
                                 src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85"
-                                alt="Family Suite Bedroom">
+                                alt="Luxury Hotel Room">
 
                         </div>
 
@@ -1228,10 +1379,9 @@
 
                             <img
                                 src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1400&q=85"
-                                alt="Luxury Family Accommodation">
+                                alt="Family Ocean View Suite Bed">
 
                         </div>
-
 
                     </div>
 
@@ -1241,7 +1391,7 @@
                     <button
                         class="carousel-control-prev"
                         type="button"
-                        data-bs-target="#familyRoomCarousel"
+                        data-bs-target="#familySuiteCarousel"
                         data-bs-slide="prev">
 
                         <span
@@ -1260,7 +1410,7 @@
                     <button
                         class="carousel-control-next"
                         type="button"
-                        data-bs-target="#familyRoomCarousel"
+                        data-bs-target="#familySuiteCarousel"
                         data-bs-slide="next">
 
                         <span
@@ -1275,110 +1425,8 @@
 
                 </div>
 
-
-                <!-- ROOM QUICK INFORMATION -->
-
-                <div class="room-info-box">
-
-                    <div class="row g-4">
-
-
-                        <div class="col-6 col-md-3">
-
-                            <div class="room-info-item">
-
-                                <i class="fa-solid fa-bed"></i>
-
-                                <div>
-
-                                    <strong>
-                                        Bedrooms
-                                    </strong>
-
-                                    <span>
-                                        2
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="col-6 col-md-3">
-
-                            <div class="room-info-item">
-
-                                <i class="fa-solid fa-bath"></i>
-
-                                <div>
-
-                                    <strong>
-                                        Bathrooms
-                                    </strong>
-
-                                    <span>
-                                        2
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="col-6 col-md-3">
-
-                            <div class="room-info-item">
-
-                                <i class="fa-solid fa-users"></i>
-
-                                <div>
-
-                                    <strong>
-                                        Ideal For
-                                    </strong>
-
-                                    <span>
-                                        Families
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="col-6 col-md-3">
-
-                            <div class="room-info-item">
-
-                                <i class="fa-solid fa-water"></i>
-
-                                <div>
-
-                                    <strong>
-                                        View
-                                    </strong>
-
-                                    <span>
-                                        Ocean
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
             </div>
+
 
 
             <!-- =================================================
@@ -1387,223 +1435,94 @@
 
             <div class="col-lg-5">
 
-                <div class="section-label">
+                <div class="room-content">
 
-                    Family Suite
+                    <div class="section-label">
 
-                </div>
-
-
-                <h2 class="section-title mt-3 mb-4">
-
-                    Space For
-                    <br>
-                    Togetherness
-
-                </h2>
-
-
-                <p class="section-text">
-
-                    Designed with families in mind, the Ocean View
-                    Two-Bedroom Family Suite offers an airy and
-                    comfortable environment where everyone can
-                    relax while still enjoying their own personal
-                    space.
-
-                </p>
-
-
-                <p class="section-text">
-
-                    The suite features two bedrooms and two
-                    bathrooms — one thoughtfully arranged for
-                    parents and another for children.
-
-                    Its spacious design makes it an ideal choice
-                    for families looking for comfort, convenience
-                    and privacy during their stay in Kovalam.
-
-                </p>
-
-
-                <p class="section-text">
-
-                    With beautiful ocean views and a peaceful
-                    resort atmosphere, the suite creates the
-                    perfect setting for a memorable family
-                    getaway.
-
-                </p>
-
-
-                <a
-                    href="https://staahmax.staah.net/"
-                    target="_blank"
-                    class="btn btn-gold mt-3">
-
-                    Book This Suite
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     ROOM HIGHLIGHTS
-====================================================== -->
-
-<section class="highlights-section">
-
-    <div class="container">
-
-
-        <div class="text-center mb-5">
-
-            <div class="section-label">
-
-                Suite Highlights
-
-            </div>
-
-
-            <h2 class="section-title mt-3">
-
-                Designed For
-                Family Comfort
-
-            </h2>
-
-        </div>
-
-
-        <div class="row g-4">
-
-
-            <!-- HIGHLIGHT 1 -->
-
-            <div class="col-md-6 col-lg-3">
-
-                <div class="highlight-box">
-
-                    <div class="highlight-icon">
-
-                        <i class="fa-solid fa-bed"></i>
+                        Family Ocean View Suite
 
                     </div>
 
 
-                    <h4>
-                        Two Bedrooms
-                    </h4>
+                    <h2>Space To Share<br>By The Sea</h2>
 
 
-                    <p>
-
-                        Separate bedrooms provide
-                        comfortable sleeping spaces
-                        for parents and children.
-
-                    </p>
-
-                </div>
-
-            </div>
+                    <p>Settle into a generously proportioned heritage-style family suite designed for comfort, privacy and relaxed coastal living.</p>
 
 
-            <!-- HIGHLIGHT 2 -->
-
-            <div class="col-md-6 col-lg-3">
-
-                <div class="highlight-box">
-
-                    <div class="highlight-icon">
-
-                        <i class="fa-solid fa-bath"></i>
-
-                    </div>
+                    <p>Two bedrooms, two bathrooms, a lounge and a sitout with a dining table create an inviting space for family time, while large windows and private balconies bring the Arabian Sea close.</p>
 
 
-                    <h4>
-                        Two Bathrooms
-                    </h4>
+                    <!-- QUICK DETAILS -->
+
+                    <div class="room-quick-details">
 
 
-                    <p>
+                        <div class="quick-detail">
 
-                        Two bathrooms provide
-                        additional convenience
-                        and privacy for families.
+                            <i class="fa-solid fa-maximize"></i>
 
-                    </p>
+                            <span>
+                                1,180 Sq. Ft.
+                            </span>
 
-                </div>
-
-            </div>
+                        </div>
 
 
-            <!-- HIGHLIGHT 3 -->
+                        <div class="quick-detail">
 
-            <div class="col-md-6 col-lg-3">
+                            <i class="fa-solid fa-bed"></i>
 
-                <div class="highlight-box">
+                            <span>
+                                Two Bedrooms
+                            </span>
 
-                    <div class="highlight-icon">
+                        </div>
 
-                        <i class="fa-solid fa-water"></i>
+
+                        <div class="quick-detail">
+
+                            <i class="fa-solid fa-users"></i>
+
+                            <span>
+                                Family Stay
+                            </span>
+
+                        </div>
+
+
+                        <div class="quick-detail">
+
+                            <i class="fa-solid fa-wifi"></i>
+
+                            <span>
+                                Ocean-View Setting
+                            </span>
+
+                        </div>
 
                     </div>
 
 
-                    <h4>
-                        Ocean View
-                    </h4>
+                    <!-- BOOK BUTTON -->
+
+                    <a
+                        href="https://staahmax.staah.net/"
+                        target="_blank"
+                        class="btn btn-gold">
+
+                        Book This Room
+
+                    </a>
 
 
-                    <p>
+                    <a
+                        href="index.html#rooms"
+                        class="btn btn-outline-secondary rounded-0 ms-2">
 
-                        Enjoy beautiful views of the
-                        Arabian Sea from the comfort
-                        of your accommodation.
+                        All Rooms
 
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- HIGHLIGHT 4 -->
-
-            <div class="col-md-6 col-lg-3">
-
-                <div class="highlight-box">
-
-                    <div class="highlight-icon">
-
-                        <i class="fa-solid fa-people-roof"></i>
-
-                    </div>
-
-
-                    <h4>
-                        Family Friendly
-                    </h4>
-
-
-                    <p>
-
-                        A spacious layout designed
-                        to make family stays relaxed,
-                        comfortable and enjoyable.
-
-                    </p>
+                    </a>
 
                 </div>
 
@@ -1616,251 +1535,153 @@
 </section>
 
 
+
 <!-- =====================================================
-     AMENITIES
+     ROOM DETAILS + AMENITIES
 ====================================================== -->
 
-<section class="amenities-section">
+<section class="room-info-section">
 
     <div class="container">
 
         <div class="row g-5">
 
 
-            <!-- LEFT -->
+            <!-- ROOM DESCRIPTION -->
 
-            <div class="col-lg-5">
+            <div class="col-lg-6">
 
                 <div class="section-label">
 
-                    Room Amenities
+                    Room Details
 
                 </div>
 
 
-                <h2 class="section-title mt-3 mb-4">
-
-                    Comfort In
-                    Every Detail
-
-                </h2>
+                <h2 class="info-title mt-3">Designed For<br>Family Getaways</h2>
 
 
-                <p class="section-text">
+                <p class="info-text">The Family Ocean View Suite is a generously proportioned heritage-style retreat created for comfort, privacy and memorable family getaways in Kovalam.</p>
 
-                    Everything has been thoughtfully arranged
-                    to make your family stay comfortable,
-                    convenient and relaxing.
 
-                </p>
+                <p class="info-text">With two bedrooms, two bathrooms, a lounge, a sitout with dining table and two private balconies, the suite gives every guest room to relax together or find a quiet moment alone.</p>
+
+
+                <p class="info-text">Large windows draw in natural light and the balconies complete the coastal experience, making this suite a welcoming base for exploring Kovalam at your own pace.</p>
 
             </div>
 
 
-            <!-- RIGHT -->
 
-            <div class="col-lg-7">
+            <!-- AMENITIES -->
 
-                <ul class="amenities-list">
+            <div class="col-lg-6">
 
-
-                    <li>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        Two Bedrooms
-
-                    </li>
-
-
-                    <li>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        Two Bathrooms
-
-                    </li>
-
-
-                    <li>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        Ocean View
-
-                    </li>
-
-
-                    <li>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        Comfortable Beds
-
-                    </li>
-
-
-                    <li>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        Air Conditioning
-
-                    </li>
-
-
-                    <li>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        Television
-
-                    </li>
-
-
-                    <li>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        Complimentary Wi-Fi
-
-                    </li>
-
-
-                    <li>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        Hot & Cold Water
-
-                    </li>
-
-
-                    <li>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        Housekeeping Service
-
-                    </li>
-
-
-                    <li>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        Room Service
-
-                    </li>
-
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     COMPLEMENTARY DETAILS
-====================================================== -->
-
-<section class="py-0">
-
-    <div class="container">
-
-        <div class="complementary-box">
-
-            <div class="row align-items-center g-5">
-
-
-                <div class="col-lg-6">
+                <div class="amenities-box">
 
                     <div class="section-label">
 
-                        Complementary Benefits
+                        Room Amenities
 
                     </div>
 
 
-                    <h2 class="mt-3">
+                    <h3 class="info-title mt-3">
 
-                        Thoughtful
-                        Extras For Your Stay
+                        Thoughtful Suite Comfort
 
-                    </h2>
-
-
-                    <p class="mt-4">
-
-                        Enjoy a selection of complimentary
-                        services designed to make your stay
-                        more comfortable and enjoyable.
-
-                    </p>
-
-                </div>
+                    </h3>
 
 
-                <div class="col-lg-6">
-
-                    <ul class="complementary-list">
+                    <ul class="amenity-list">
 
 
                         <li>
 
-                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-bed"></i>
 
-                            Complimentary Breakfast
+                            Two Bedrooms
 
                         </li>
 
 
                         <li>
 
-                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-wifi"></i>
 
-                            Complimentary Wi-Fi
-
-                        </li>
-
-
-                        <li>
-
-                            <i class="fa-solid fa-check"></i>
-
-                            Daily Housekeeping
+                            Two Bathrooms
 
                         </li>
 
 
                         <li>
 
-                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-snowflake"></i>
 
-                            Access to Swimming Pool
-
-                        </li>
-
-
-                        <li>
-
-                            <i class="fa-solid fa-check"></i>
-
-                            Welcome Hospitality
+                            Individually Controlled Air-Conditioning
 
                         </li>
 
 
                         <li>
 
-                            <i class="fa-solid fa-check"></i>
+                            <i class="fa-solid fa-tv"></i>
 
-                            Assistance From Resort Team
+                            Television
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-mug-hot"></i>
+
+                            Premium Tea & Coffee Station
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-bath"></i>
+
+                            Two Bathrooms
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-shower"></i>
+
+                            Modern Bathroom Facilities
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-door-open"></i>
+
+                            Lounge & Sitout
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            Two Private Balconies
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-bell"></i>
+
+                            Ocean-View Setting
 
                         </li>
 
@@ -1878,6 +1699,183 @@
 </section>
 
 
+
+<!-- =====================================================
+     COMPLEMENTARY DETAILS
+====================================================== -->
+
+<section class="complimentary-section">
+
+    <div class="container">
+
+
+        <div class="text-center mb-5">
+
+            <div class="section-label">
+
+                Suite Features
+
+            </div>
+
+
+            <h2 class="info-title">
+
+                Made For Family Getaways
+
+            </h2>
+
+
+            <p
+                class="info-text mx-auto"
+                style="max-width:650px;">
+
+                Enjoy thoughtful complimentary services
+                designed to make your stay more comfortable
+                and memorable.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- BREAKFAST -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="complimentary-card">
+
+                    <div class="complimentary-icon">
+
+                        <i class="fa-solid fa-mug-hot"></i>
+
+                    </div>
+
+
+                    <h4>
+
+                        Two Bedrooms
+
+                    </h4>
+
+
+                    <p>
+
+                        Comfortable rooms give families space to settle in and enjoy their time together.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- WIFI -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="complimentary-card">
+
+                    <div class="complimentary-icon">
+
+                        <i class="fa-solid fa-wifi"></i>
+
+                    </div>
+
+
+                    <h4>
+
+                        Two Bathrooms
+
+                    </h4>
+
+
+                    <p>
+
+                        Thoughtfully arranged bathrooms add ease and privacy to the family stay.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- WATER -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="complimentary-card">
+
+                    <div class="complimentary-icon">
+
+                        <i class="fa-solid fa-bottle-water"></i>
+
+                    </div>
+
+
+                    <h4>
+
+                        Private Balconies
+
+                    </h4>
+
+
+                    <p>
+
+                        Step outside to enjoy coastal air and the relaxed rhythm of Kovalam.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- POOL -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="complimentary-card">
+
+                    <div class="complimentary-icon">
+
+                        <i class="fa-solid fa-water-ladder"></i>
+
+                    </div>
+
+
+                    <h4>
+
+                        Lounge & Sitout
+
+                    </h4>
+
+
+                    <p>
+
+                        Share relaxed meals and family moments in the lounge and sitout dining area.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
 <!-- =====================================================
      BOOKING CTA
 ====================================================== -->
@@ -1886,26 +1884,25 @@
 
     <div class="container">
 
-        <div class="section-label">
+        <div class="section-label text-white">
 
-            Your Family Getaway Awaits
+            Your Getaway Awaits
 
         </div>
 
 
         <h2 class="mt-3">
 
-            Make Memories
-            By The Sea
+            Make Your Stay
+            Unforgettable
 
         </h2>
 
 
         <p>
 
-            Bring your family together for a comfortable
-            and memorable stay at Getaway Beach Resort
-            Kovalam.
+            Relax in the comfort of our Family Ocean View Suite and
+            experience the beauty and serenity of Kovalam.
 
         </p>
 
@@ -1915,27 +1912,14 @@
             target="_blank"
             class="btn btn-gold">
 
-            Book Your Family Suite
-
-        </a>
-
-
-        <br>
-
-
-        <a
-            href="index.html#rooms"
-            class="btn-outline-light-custom mt-3">
-
-            <i class="fa-solid fa-arrow-left me-2"></i>
-
-            Back To Accommodation
+            Book Your Stay
 
         </a>
 
     </div>
 
 </section>
+
 
 
 <!-- =====================================================
@@ -1949,24 +1933,32 @@
         <div class="row g-5">
 
 
-            <!-- HOTEL INFORMATION -->
+            <!-- HOTEL -->
 
             <div class="col-lg-5">
 
                 <h3>
+
                     Getaway
+
                 </h3>
 
+
                 <p class="mt-3">
-                    Beach Road, Kovalam<br>
-                    Thiruvananthapuram,<br>
+
+                    Beach Road, Kovalam,
+                    Thiruvananthapuram,
                     Kerala 695527
+
                 </p>
 
+
                 <p>
-                            Experience comfort, elegance and
-                            the beauty of the Arabian Sea at
-                            Getaway Beach Resort Kovalam.
+
+                    Experience comfort, elegance and
+                    the beauty of the Arabian Sea at
+                    Getaway Beach Resort Kovalam.
+
                 </p>
 
 
@@ -1994,12 +1986,15 @@
             </div>
 
 
+
             <!-- EXPLORE -->
 
             <div class="col-lg-2">
 
                 <h5>
+
                     Explore
+
                 </h5>
 
 
@@ -2008,7 +2003,9 @@
                     <li>
 
                         <a href="index.html">
+
                             Home
+
                         </a>
 
                     </li>
@@ -2017,7 +2014,9 @@
                     <li>
 
                         <a href="index.html#about">
+
                             About
+
                         </a>
 
                     </li>
@@ -2026,7 +2025,9 @@
                     <li>
 
                         <a href="index.html#rooms">
+
                             Accommodation
+
                         </a>
 
                     </li>
@@ -2035,7 +2036,9 @@
                     <li>
 
                         <a href="index.html#dining">
+
                             Dining
+
                         </a>
 
                     </li>
@@ -2044,7 +2047,9 @@
                     <li>
 
                         <a href="index.html#experience">
+
                             Experience
+
                         </a>
 
                     </li>
@@ -2053,7 +2058,9 @@
                     <li>
 
                         <a href="index.html#gallery">
+
                             Gallery
+
                         </a>
 
                     </li>
@@ -2062,7 +2069,9 @@
                     <li>
 
                         <a href="index.html#contact">
+
                             Contact
+
                         </a>
 
                     </li>
@@ -2072,12 +2081,15 @@
             </div>
 
 
+
             <!-- RESERVATIONS -->
 
             <div class="col-lg-5">
 
                 <h5>
+
                     Reservations
+
                 </h5>
 
 
@@ -2122,9 +2134,10 @@
         </div>
 
 
+
         <div class="copyright">
 
-            © 2026 Getaway Beach Resort Kovalam.
+            Â© 2026 Getaway Beach Resort Kovalam.
             All Rights Reserved.
 
         </div>
@@ -2132,6 +2145,7 @@
     </div>
 
 </footer>
+
 
 
 <!-- =====================================================
@@ -2143,27 +2157,34 @@
 </script>
 
 
+
 <script>
 
     /* =====================================================
-       AUTO SLIDE
+       NAVBAR SCROLL EFFECT
     ====================================================== */
 
-    const familyCarousel =
-        document.querySelector("#familyRoomCarousel");
+    window.addEventListener("scroll", function () {
 
-    new bootstrap.Carousel(
-        familyCarousel,
-        {
-            interval: 4500,
-            ride: "carousel",
-            touch: true
+        const navbar =
+            document.querySelector(".navbar");
+
+        if (window.scrollY > 50) {
+
+            navbar.classList.add("scrolled");
+
+        } else {
+
+            navbar.classList.remove("scrolled");
+
         }
-    );
+
+    });
+
 
 
     /* =====================================================
-       MOBILE NAVBAR CLOSE
+       MOBILE NAVBAR
     ====================================================== */
 
     document
@@ -2175,13 +2196,10 @@
                 const navbar =
                     document.querySelector(".navbar-collapse");
 
-                if (
-                    navbar.classList.contains("show")
-                ) {
+                if (navbar.classList.contains("show")) {
 
                     const bsCollapse =
-                        bootstrap.Collapse
-                        .getInstance(navbar);
+                        bootstrap.Collapse.getInstance(navbar);
 
                     if (bsCollapse) {
 
@@ -2201,4 +2219,7 @@
 </body>
 
 </html>
-```
+
+
+
+
