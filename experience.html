@@ -129,6 +129,12 @@
 
             color: white !important;
 
+            display: flex;
+
+            align-items: center;
+
+            text-decoration: none;
+
             font-family: 'Playfair Display', serif;
 
             font-size: 31px;
@@ -153,6 +159,30 @@
             text-align: center;
 
             margin-top: 5px;
+
+        }
+
+
+        .navbar-brand img {
+
+            width: 220px;
+
+            height: auto;
+
+            display: block;
+
+            transition: width 0.4s ease;
+
+        }
+
+
+        @media (max-width: 767px) {
+
+            .navbar-brand img {
+
+                width: 155px;
+
+            }
 
         }
 
@@ -1137,13 +1167,12 @@
 
         <a
             class="navbar-brand"
-            href="index.html">
+            href="index.html"
+            aria-label="Getaway Beach Resort Kovalam">
 
-            GETAWAY
-
-            <small>
-                BEACH RESORT KOVALAM
-            </small>
+            <img
+                src="getaway-logo-white-cropped.png"
+                alt="Getaway Beach Resort Kovalam Logo">
 
         </a>
 
