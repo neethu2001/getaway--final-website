@@ -115,7 +115,7 @@
 
             transition: all 0.4s ease;
 
-            padding: 14px 0;
+            padding: clamp(12px, 1vw, 20px) 0;
 
             z-index: 1000;
 
@@ -128,7 +128,7 @@
 
             background: var(--primary);
 
-            padding: 12px 0;
+            padding: clamp(10px, 0.8vw, 16px) 0;
 
             box-shadow: 0 4px 25px rgba(0, 0, 0, 0.18);
 
@@ -156,7 +156,7 @@
 
         .navbar-brand img {
 
-            width: 220px;
+            width: clamp(175px, 11.7vw, 240px);
 
             height: auto;
 
@@ -171,7 +171,7 @@
 
         .navbar.scrolled .navbar-brand img {
 
-            width: 190px;
+            width: clamp(160px, 10vw, 210px);
 
         }
 
@@ -193,13 +193,13 @@
 
             color: white !important;
 
-            font-size: 10px;
+            font-size: clamp(10px, 0.62vw, 13px);
 
             font-weight: 500;
 
-            letter-spacing: 1.8px;
+            letter-spacing: clamp(1.2px, 0.12vw, 2.2px);
 
-            margin: 0 9px;
+            margin: 0 clamp(5px, 0.55vw, 11px);
 
             text-transform: uppercase;
 
@@ -211,6 +211,19 @@
         .navbar .nav-link:hover {
 
             color: var(--secondary) !important;
+
+        }
+
+
+        .navbar .btn-gold {
+
+            padding: clamp(12px, 0.9vw, 18px) clamp(20px, 1.8vw, 34px);
+
+            font-size: clamp(10px, 0.58vw, 13px);
+
+            letter-spacing: clamp(1.3px, 0.12vw, 2px);
+
+            white-space: nowrap;
 
         }
 
@@ -282,17 +295,21 @@
             background:
 
                 linear-gradient(
-                    rgba(0, 0, 0, 0.38),
-                    rgba(0, 0, 0, 0.58)
+                    rgba(248, 245, 239, 0.18),
+                    rgba(8, 76, 115, 0.16)
                 ),
 
-                url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=85")
+                url("landing-hero.png")
 
                 center/cover no-repeat;
 
             display: flex;
 
-            align-items: center;
+            align-items: flex-start;
+
+            padding-top: clamp(108px, 16vh, 150px);
+
+            box-sizing: border-box;
 
             position: relative;
 
@@ -301,15 +318,65 @@
 
         .hero-content {
 
-            color: white;
+            color: var(--dark);
 
-            max-width: 850px;
+            width: 100%;
+
+            max-width: 1080px;
 
             margin: auto;
 
             text-align: center;
 
-            padding-top: 60px;
+            padding-top: 0;
+
+            position: relative;
+
+            height: auto;
+
+        }
+
+
+        .hero-tagline {
+
+            position: absolute;
+
+            top: clamp(96px, 17vh, 150px);
+
+            right: clamp(18px, 6vw, 92px);
+
+            color: var(--dark);
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-size: clamp(9px, 0.7vw, 12px);
+
+            font-weight: 500;
+
+            letter-spacing: clamp(3px, 0.35vw, 6px);
+
+            line-height: 2.25;
+
+            text-align: left;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .hero-tagline::after {
+
+            content: '';
+
+            display: block;
+
+            width: 32px;
+
+            height: 2px;
+
+            margin-top: 14px;
+
+            background: var(--gold);
 
         }
 
@@ -320,13 +387,13 @@
 
             text-transform: uppercase;
 
-            letter-spacing: 5px;
+            letter-spacing: clamp(6px, 0.7vw, 10px);
 
-            font-size: 11px;
+            font-size: clamp(14px, 1.15vw, 18px);
 
             font-weight: 500;
 
-            margin-bottom: 22px;
+            margin-bottom: clamp(6px, 1vh, 12px);
 
         }
 
@@ -335,15 +402,52 @@
 
             font-family: 'Playfair Display', serif;
 
-            font-size: clamp(58px, 8vw, 105px);
+            font-size: clamp(60px, 8vw, 130px);
 
             font-weight: 400;
 
-            line-height: 1;
+            line-height: 0.92;
 
-            letter-spacing: -1.5px;
+            letter-spacing: 0.02em;
 
-            margin-bottom: 30px;
+            text-transform: uppercase;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .hero h1 span {
+
+            display: block;
+
+        }
+
+
+        .hero h1 .hero-title-subline {
+
+            font-size: 0.42em;
+
+            letter-spacing: 0.34em;
+
+            line-height: 1.15;
+
+        }
+
+
+        .hero h1::after {
+
+            content: '';
+
+            display: block;
+
+            width: 60px;
+
+            height: 2px;
+
+            margin: 22px auto 0;
+
+            background: var(--gold);
 
         }
 
@@ -352,13 +456,17 @@
 
             max-width: 650px;
 
-            margin: auto auto 35px;
+            margin: 0 auto;
 
-            font-size: 14px;
+            font-family: 'Playfair Display', serif;
+
+            font-size: 15px;
+
+            font-style: italic;
 
             font-weight: 300;
 
-            line-height: 1.9;
+            line-height: 1.55;
 
             letter-spacing: 0.3px;
 
@@ -372,6 +480,17 @@
         }
 
 
+        .hero-buttons {
+
+            position: static;
+
+            margin-top: clamp(56px, 10vh, 120px);
+
+            width: 100%;
+
+        }
+
+
         .btn-outline-light-custom {
 
             font-family: 'Montserrat', sans-serif;
@@ -380,9 +499,11 @@
 
             padding: 14px 28px;
 
-            border: 1px solid white;
+            border: 1px solid var(--dark);
 
-            color: white;
+            color: var(--dark);
+
+            background: rgba(248, 245, 239, 0.42);
 
             text-decoration: none;
 
@@ -401,7 +522,7 @@
 
         .btn-outline-light-custom:hover {
 
-            background: white;
+            background: rgba(248, 245, 239, 0.78);
 
             color: var(--dark);
 
@@ -1575,7 +1696,7 @@
 
             .navbar-brand img {
 
-                width: 135px;
+                width: clamp(145px, 18vw, 190px);
 
             }
 
@@ -1598,6 +1719,22 @@
 
                 min-height: 90vh;
 
+                padding-top: clamp(96px, 14vh, 130px);
+
+            }
+
+
+            .hero-content {
+
+                height: auto;
+
+            }
+
+
+            .hero-tagline {
+
+                right: 24px;
+
             }
 
         }
@@ -1613,7 +1750,7 @@
 
 
             .navbar-brand img {
-                width: 155px;
+                width: clamp(150px, 30vw, 190px);
                 height: auto;
                 max-height: none;
             }
@@ -1621,14 +1758,47 @@
 
             .navbar.scrolled .navbar-brand img {
 
-                width: 145px;
+                width: clamp(140px, 28vw, 180px);
 
             }
 
 
             .hero h1 {
 
-                font-size: 55px;
+                font-size: clamp(56px, 11vw, 82px);
+
+            }
+
+
+            .hero-tagline {
+
+                position: relative;
+
+                top: auto;
+
+                right: auto;
+
+                margin: 32px auto 0;
+
+                text-align: center;
+
+            }
+
+
+            .hero-buttons {
+
+                position: static;
+
+                margin-top: 28px;
+
+            }
+
+
+            .hero-tagline::after {
+
+                margin-right: auto;
+
+                margin-left: auto;
 
             }
 
@@ -1871,16 +2041,15 @@
 
         <div class="hero-content">
 
-            <!-- <div class="hero-subtitle">
-                Welcome to Getaway
-            </div> -->
+            <div class="hero-subtitle">
+                Experience
+            </div>
 
 
             <h1>
 
-                Experience Kovalam
-                <br>
-                By The Sea
+                <span>Kovalam</span>
+                <span class="hero-title-subline">By The Sea</span>
 
             </h1>
 
@@ -1909,12 +2078,18 @@
                     href="#about"
                     class="btn-outline-light-custom">
 
-                    Discover More
+                    Discover More <span aria-hidden="true">&nbsp;→</span>
 
                 </a>
 
             </div>
 
+        </div>
+
+        <div class="hero-tagline">
+            A Stay<br>
+            Beyond<br>
+            Ordinary
         </div>
 
     </div>
