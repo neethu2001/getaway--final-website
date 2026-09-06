@@ -44,6 +44,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://www.swiftbook.io">
+    <link rel="preconnect" href="https://settings.swiftbook.io">
+
 
     <style>
 
@@ -460,6 +463,272 @@
             font-family: 'Montserrat', sans-serif;
 
             font-size: 12px;
+
+        }
+
+
+        .getaway-booking-widget {
+
+            margin-top: -55px;
+
+            position: relative;
+
+            z-index: 20;
+
+            padding: 0 15px;
+
+        }
+
+
+        .getaway-booking-widget .MbsSearchWidget {
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            padding: 24px 28px;
+
+            background: var(--white) !important;
+
+            border: 1px solid rgba(8, 76, 115, 0.12);
+
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+
+            font-family: 'Montserrat', sans-serif !important;
+
+        }
+
+
+        .getaway-booking-widget .MbsSearchWidget {
+
+            display: flex !important;
+
+            flex-wrap: nowrap !important;
+
+            align-items: flex-end !important;
+
+            gap: 12px;
+
+        }
+
+
+        .getaway-booking-widget .MbsSearchWidget > .formGroup,
+        .getaway-booking-widget .MbsSearchWidget > .roomTypeList {
+
+            flex: 1 1 0 !important;
+
+            min-width: 0 !important;
+
+            margin: 0 !important;
+
+        }
+
+
+        .getaway-booking-widget .MbsSearchWidget > .searchBlock {
+
+            flex: 0 0 120px !important;
+
+            margin: 0 !important;
+
+        }
+
+
+        .getaway-booking-widget .MbsSearchWidget .formGroup,
+        .getaway-booking-widget .MbsSearchWidget .searchBlock {
+
+            margin: 0 8px 0 0;
+
+        }
+
+
+        .getaway-booking-widget .MbsSearchWidget .checkInOutForm {
+
+            display: flex !important;
+
+            align-items: flex-end !important;
+
+            gap: 12px;
+
+        }
+
+
+        .getaway-booking-widget .MbsSearchWidget .checkInOutForm .checkinOut {
+
+            flex: 1 1 0;
+
+            min-width: 0;
+
+        }
+
+
+        .getaway-booking-widget .MbsSearchWidget .checkInOutForm .mbs-arrow {
+
+            flex: 0 0 auto;
+
+            height: 46px;
+
+            margin-bottom: 0;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            position: relative !important;
+
+            top: 0 !important;
+
+            left: -4px !important;
+
+            transform: none !important;
+
+        }
+
+
+        .getaway-booking-widget .MbsSearchWidget .lbl,
+        .getaway-booking-widget .MbsSearchWidget .dayUseLable {
+
+            font-size: 9px !important;
+
+            font-weight: 600;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            color: var(--dark) !important;
+
+        }
+
+
+        .getaway-booking-widget .MbsSearchWidget .checkinDate,
+        .getaway-booking-widget .MbsSearchWidget .roomTypeList select,
+        .getaway-booking-widget .MbsSearchWidget .promocode {
+
+            min-height: 46px;
+
+            border: 1px solid rgba(8, 76, 115, 0.25) !important;
+
+            border-radius: 0 !important;
+
+            background: var(--white) !important;
+
+            color: var(--dark) !important;
+
+            font-family: 'Montserrat', sans-serif !important;
+
+            font-size: 12px !important;
+
+        }
+
+
+        .getaway-booking-widget .MbsSearchWidget .checkInOutForm .checkinDate {
+
+            display: flex !important;
+
+            align-items: center !important;
+
+        }
+
+
+        .getaway-booking-widget .MbsSearchWidget .searchBtn {
+
+            min-height: 46px;
+
+            padding: 12px 24px !important;
+
+            border: 1px solid var(--secondary) !important;
+
+            border-radius: 0 !important;
+
+            background: var(--secondary) !important;
+
+            color: var(--white) !important;
+
+            font-family: 'Montserrat', sans-serif !important;
+
+            font-size: 10px !important;
+
+            font-weight: 600;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .getaway-booking-widget .MbsSearchWidget .searchBtn:hover {
+
+            background: var(--dark) !important;
+
+            border-color: var(--dark) !important;
+
+        }
+
+
+        @media (max-width: 767px) {
+
+            .getaway-booking-widget {
+
+                margin-top: 0;
+
+                padding: 0 12px;
+
+            }
+
+
+            .getaway-booking-widget .MbsSearchWidget {
+
+                padding: 20px;
+
+                flex-direction: column;
+
+                align-items: stretch !important;
+
+                gap: 0;
+
+            }
+
+
+            .getaway-booking-widget .MbsSearchWidget > .formGroup,
+            .getaway-booking-widget .MbsSearchWidget > .roomTypeList,
+            .getaway-booking-widget .MbsSearchWidget > .searchBlock {
+
+                width: 100%;
+
+                flex: 0 0 auto !important;
+
+            }
+
+
+            .getaway-booking-widget .MbsSearchWidget .formGroup,
+            .getaway-booking-widget .MbsSearchWidget .searchBlock {
+
+                margin: 0 0 12px;
+
+            }
+
+
+            .getaway-booking-widget .MbsSearchWidget .checkInOutForm {
+
+                display: flex !important;
+
+                flex-direction: column;
+
+                align-items: stretch !important;
+
+                gap: 12px;
+
+            }
+
+
+            .getaway-booking-widget .MbsSearchWidget .checkInOutForm .mbs-arrow {
+
+                display: none;
+
+            }
 
         }
 
@@ -1657,123 +1926,8 @@
      BOOKING BAR
 ====================================================== -->
 
-<div class="booking-wrapper">
-
-    <div class="container">
-
-        <div class="booking-box">
-
-            <form>
-
-                <div class="row g-3 align-items-end">
-
-                    <div class="col-lg-3">
-
-                        <label>
-                            Check In
-                        </label>
-
-                        <input
-                            type="date"
-                            class="form-control">
-
-                    </div>
-
-
-                    <div class="col-lg-3">
-
-                        <label>
-                            Check Out
-                        </label>
-
-                        <input
-                            type="date"
-                            class="form-control">
-
-                    </div>
-
-
-                    <div class="col-lg-2">
-
-                        <label>
-                            Adults
-                        </label>
-
-                        <select class="form-select">
-
-                            <option>
-                                1 Adult
-                            </option>
-
-                            <option>
-                                2 Adults
-                            </option>
-
-                            <option>
-                                3 Adults
-                            </option>
-
-                            <option>
-                                4 Adults
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <div class="col-lg-2">
-
-                        <label>
-                            Children
-                        </label>
-
-                        <select class="form-select">
-
-                            <option>
-                                0 Children
-                            </option>
-
-                            <option>
-                                1 Child
-                            </option>
-
-                            <option>
-                                2 Children
-                            </option>
-
-                            <option>
-                                3 Children
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <div class="col-lg-2">
-
-                        <a
-                            href="https://www.swiftbook.io/inst/#/home?propertyId=823MjMc5sn2pACQLH4YkqSGChhbJW1qQnx2XMyBLMkzVcqT3ODA=&JDRN=Y&RoomID=131257,131258,131259,131261&gsId=823MjMc5sn2pACQLH4YkqSGChhbJW1qQnx2XMyBLMkzVcqT3ODA="
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="btn btn-gold w-100">
-
-                            Check Availability
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</div>
+<div id="quickbook-widget-823MjMc5sn2pACQLH4YkqSGChhbJW1qQnx2XMyBLMkzVcqT3ODA=-823MjMc5sn2pACQLH4YkqSGChhbJW1qQnx2XMyBLMkzVcqT3ODA=" class="Configure-quickBook-Widget getaway-booking-widget"></div>
+<script async src="https://www.swiftbook.io/cwplugin/displaywidget/preview/booking-service.min.js?propertyId=823MjMc5sn2pACQLH4YkqSGChhbJW1qQnx2XMyBLMkzVcqT3ODA=&scriptId=823MjMc5sn2pACQLH4YkqSGChhbJW1qQnx2XMyBLMkzVcqT3ODA=" id="propInfo"></script>
 
 
 <!-- =====================================================
