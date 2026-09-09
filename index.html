@@ -3631,7 +3631,21 @@
                 body: JSON.stringify(Object.fromEntries(new FormData(enquiryForm)))
             });
 
-            const result = await response.json();
+            const responseText = await response.text();
+            let result;
+
+            try {
+                result = JSON.parse(responseText);
+            } catch (parseError) {
+                const jsonStart = responseText.indexOf('{"success"');
+                const jsonEnd = responseText.lastIndexOf('}');
+
+                if (jsonStart === -1 || jsonEnd < jsonStart) {
+                    throw new Error("The enquiry service returned an invalid response. Please try again.");
+                }
+
+                result = JSON.parse(responseText.slice(jsonStart, jsonEnd + 1));
+            }
 
             if (!response.ok || !result.success) {
                 throw new Error(result.message || "Unable to send enquiry.");
