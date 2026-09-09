@@ -3625,11 +3625,21 @@
 
         try {
 
-            const response = await fetch("contact.php", {
+            const requestBody = new URLSearchParams(new FormData(enquiryForm));
+            const requestOptions = {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(Object.fromEntries(new FormData(enquiryForm)))
-            });
+                body: requestBody
+            };
+
+            let response = await fetch("contact.php", requestOptions);
+
+            if (response.status === 409) {
+                response = await fetch("contact.php", {
+                    ...requestOptions,
+                    body: requestBody.toString(),
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" }
+                });
+            }
 
             const responseText = await response.text();
             let result;
