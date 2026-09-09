@@ -377,7 +377,7 @@
 
             color: var(--dark);
 
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Playfair Display', serif;
 
             font-size: clamp(9px, 0.7vw, 12px);
 
@@ -413,7 +413,7 @@
 
         .hero-subtitle {
 
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Playfair Display', serif;
 
             text-transform: uppercase;
 
@@ -488,15 +488,13 @@
 
             margin: 0 auto;
 
-            font-family: 'Playfair Display', serif;
+            font-family: 'Montserrat', sans-serif;
 
             font-size: 15px;
 
             font-style: normal;
 
             font-weight: 400;
-
-            text-transform: uppercase;
 
             line-height: 1.55;
 
@@ -1175,6 +1173,62 @@
             line-height: 1.9;
 
             min-height: 105px;
+
+        }
+
+
+        .room-quick-details {
+
+            display: grid;
+
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+
+            gap: 8px;
+
+            margin-top: 20px;
+
+        }
+
+
+        .room-quick-details .quick-detail {
+
+            border: 1px solid #e5e5e5;
+
+            padding: 12px 6px;
+
+            min-width: 0;
+
+            text-align: center;
+
+        }
+
+
+        .room-quick-details .quick-detail i {
+
+            display: block;
+
+            margin-bottom: 7px;
+
+            color: var(--secondary);
+
+            font-size: 17px;
+
+        }
+
+
+        .room-quick-details .quick-detail span {
+
+            display: block;
+
+            color: #777;
+
+            font-size: 8px;
+
+            line-height: 1.35;
+
+            letter-spacing: 0.8px;
+
+            text-transform: uppercase;
 
         }
 
@@ -1888,6 +1942,13 @@
 
             }
 
+
+            .room-quick-details {
+
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            }
+
         }
 
     </style>
@@ -2092,9 +2153,7 @@
 
             <p>
 
-                A memorable coastal stay shaped by Arabian Sea views,
-                thoughtful comfort, warm Kerala hospitality and the many
-                experiences of Kovalam.
+                A memorable coastal stay shaped by Arabian Sea views, thoughtful comfort, warm Kerala hospitality and the many experiences of Kovalam.
 
             </p>
 
@@ -2442,6 +2501,14 @@
                         </p>
 
 
+                        <div class="room-quick-details">
+                            <div class="quick-detail"><i class="fa-solid fa-maximize"></i><span>483 Sq. Ft.</span></div>
+                            <div class="quick-detail"><i class="fa-solid fa-bed"></i><span>King Bed</span></div>
+                            <div class="quick-detail"><i class="fa-solid fa-users"></i><span>2 Guests</span></div>
+                            <div class="quick-detail"><i class="fa-solid fa-wifi"></i><span>Free Wi-Fi</span></div>
+                        </div>
+
+
                         <div class="room-links">
 
                             <a
@@ -2503,6 +2570,14 @@
                             bed, rain shower, mini-bar, work desk and private balcony.
 
                         </p>
+
+
+                        <div class="room-quick-details">
+                            <div class="quick-detail"><i class="fa-solid fa-maximize"></i><span>482 Sq. Ft.</span></div>
+                            <div class="quick-detail"><i class="fa-solid fa-bed"></i><span>Plush King Bed</span></div>
+                            <div class="quick-detail"><i class="fa-solid fa-users"></i><span>Single / Double</span></div>
+                            <div class="quick-detail"><i class="fa-solid fa-wifi"></i><span>Free Wi-Fi</span></div>
+                        </div>
 
 
                         <div class="room-links">
@@ -2575,6 +2650,14 @@
                         </p>
 
 
+                        <div class="room-quick-details">
+                            <div class="quick-detail"><i class="fa-solid fa-maximize"></i><span>715 Sq. Ft.</span></div>
+                            <div class="quick-detail"><i class="fa-solid fa-door-open"></i><span>Private Balcony</span></div>
+                            <div class="quick-detail"><i class="fa-solid fa-users"></i><span>Suite Stay</span></div>
+                            <div class="quick-detail"><i class="fa-solid fa-wifi"></i><span>Free Wi-Fi</span></div>
+                        </div>
+
+
                         <div class="room-links">
 
                             <a
@@ -2641,6 +2724,14 @@
                             personal space.
 
                         </p>
+
+
+                        <div class="room-quick-details">
+                            <div class="quick-detail"><i class="fa-solid fa-maximize"></i><span>1,180 Sq. Ft.</span></div>
+                            <div class="quick-detail"><i class="fa-solid fa-bed"></i><span>Two Bedrooms</span></div>
+                            <div class="quick-detail"><i class="fa-solid fa-users"></i><span>Family Stay</span></div>
+                            <div class="quick-detail"><i class="fa-solid fa-door-open"></i><span>Two Private Balconies</span></div>
+                        </div>
 
 
                         <div class="room-links">
@@ -3534,7 +3625,7 @@
 
         try {
 
-            const response = await fetch("/api/contact", {
+            const response = await fetch("contact.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(Object.fromEntries(new FormData(enquiryForm)))
