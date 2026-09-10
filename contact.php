@@ -32,7 +32,7 @@ if ($name === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-$recipient = 'shankar.nith29@gmail.com';
+$recipient = 'reservations@getawaybeachresort.com';
 $subject = 'New website enquiry from ' . preg_replace('/[\r\n]+/', ' ', $name);
 $body = "A new enquiry was submitted through the Getaway Beach Resort website.\n\n"
     . "Name: {$name}\n"
