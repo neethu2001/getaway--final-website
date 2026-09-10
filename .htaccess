@@ -1,7 +1,1 @@
-<IfModule mime_module>
-    AddHandler application/x-httpd-ea-php83 .php .php7 .phtml
-</IfModule>
-
-<FilesMatch "\.php$">
-    SetHandler application/x-httpd-ea-php83
-</FilesMatch>
+# PHP version and handler are managed by cPanel MultiPHP Manager.
