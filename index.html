@@ -3633,21 +3633,17 @@
 
         try {
 
-            const requestBody = new URLSearchParams(new FormData(enquiryForm));
+            const requestBody = Object.fromEntries(new FormData(enquiryForm));
             const requestOptions = {
                 method: "POST",
-                body: requestBody
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(requestBody)
             };
 
-            let response = await fetch("contact.php", requestOptions);
-
-            if (response.status === 409) {
-                response = await fetch("contact.php", {
-                    ...requestOptions,
-                    body: requestBody.toString(),
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" }
-                });
-            }
+            const response = await fetch("contact.php", requestOptions);
 
             const responseText = await response.text();
             let result;
