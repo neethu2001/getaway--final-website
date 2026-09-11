@@ -290,7 +290,7 @@
 
         .hero {
 
-            min-height: 100vh;
+            min-height: max(760px, 100svh);
 
             background: var(--primary);
 
@@ -298,7 +298,7 @@
 
             align-items: flex-start;
 
-            padding-top: clamp(108px, 16vh, 150px);
+            padding-top: clamp(145px, 18vh, 205px);
 
             box-sizing: border-box;
 
@@ -320,8 +320,8 @@
             inset: 0;
 
             background: linear-gradient(
-                rgba(248, 245, 239, 0.18),
-                rgba(8, 76, 115, 0.16)
+                rgba(0, 0, 0, 0.34),
+                rgba(8, 76, 115, 0.28)
             );
 
             z-index: -1;
@@ -348,11 +348,11 @@
 
         .hero-content {
 
-            color: var(--dark);
+            color: var(--white);
 
             width: 100%;
 
-            max-width: 1080px;
+            max-width: 980px;
 
             margin: auto;
 
@@ -375,7 +375,7 @@
 
             right: clamp(18px, 6vw, 92px);
 
-            color: var(--dark);
+            color: var(--white);
 
             font-family: 'Playfair Display', serif;
 
@@ -423,7 +423,9 @@
 
             font-weight: 500;
 
-            margin-bottom: clamp(6px, 1vh, 12px);
+            margin-bottom: clamp(2px, 0.5vh, 8px);
+
+            color: var(--white);
 
         }
 
@@ -432,17 +434,19 @@
 
             font-family: 'Playfair Display', serif;
 
-            font-size: clamp(60px, 8vw, 130px);
+            font-size: clamp(58px, 7vw, 112px);
 
             font-weight: 400;
 
-            line-height: 0.92;
+            line-height: 0.9;
 
             letter-spacing: 0.02em;
 
             text-transform: uppercase;
 
-            margin-bottom: 20px;
+            margin-bottom: clamp(18px, 2.5vh, 30px);
+
+            color: var(--white);
 
         }
 
@@ -454,11 +458,18 @@
         }
 
 
+        .hero h1 .hero-title-first-line {
+
+            font-size: 0.82em;
+
+        }
+
+
         .hero h1 .hero-title-subline {
 
-            font-size: 0.42em;
+            font-size: 0.58em;
 
-            letter-spacing: 0.34em;
+            letter-spacing: 0.22em;
 
             line-height: 1.15;
 
@@ -500,6 +511,8 @@
 
             letter-spacing: 0.3px;
 
+            color: var(--white);
+
         }
 
 
@@ -514,7 +527,7 @@
 
             position: static;
 
-            margin-top: clamp(56px, 10vh, 120px);
+            margin-top: clamp(28px, 4vh, 44px);
 
             width: 100%;
 
@@ -2131,7 +2144,7 @@
 <section class="hero" id="home">
 
     <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
-        <source src="landing-waves.mp4" type="video/mp4">
+        <source src="landing-waves.mp4?v=20260911" type="video/mp4">
     </video>
 
     <div class="container">
@@ -2139,12 +2152,13 @@
         <div class="hero-content">
 
             <div class="hero-subtitle">
-                Experience
+                Welcome To Getaway
             </div>
 
 
             <h1>
 
+                <span class="hero-title-first-line">Experience</span>
                 <span>Kovalam</span>
                 <span class="hero-title-subline">By The Sea</span>
 
