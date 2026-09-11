@@ -291,7 +291,7 @@
         .hero {
            
             min-height: max(760px, 100svh);
-            background: url("landing-hero.jpg") center/cover no-repeat;
+            background: var(--primary);
 
             display: flex;
 
@@ -343,6 +343,12 @@
 
             color: var(--white);
 
+            text-shadow: none !important;
+
+            -webkit-font-smoothing: antialiased;
+
+            -moz-osx-font-smoothing: grayscale;
+
             width: 100%;
 
             max-width: 980px;
@@ -356,6 +362,13 @@
             position: relative;
 
             height: auto;
+
+        }
+
+
+        .hero-content * {
+
+            text-shadow: none !important;
 
         }
 
@@ -423,9 +436,9 @@
         }
                 .hero h1 {
                             font-family: 'Playfair Display', serif;
-                            font-size: clamp(40px, 5vw, 72px);
+                            font-size: clamp(52px, 7vw, 108px);
                             font-weight: 400;
-                            line-height: 0.95;
+                            line-height: 0.88;
                             letter-spacing: 0.02em;
                             text-transform: none;
                             margin-bottom: clamp(18px, 2.5vh, 30px);
@@ -440,18 +453,20 @@
 
         .hero h1 .hero-title-first-line {
 
-            font-size: 0.82em;
+            font-size: 0.5em;
+
+            letter-spacing: 0.04em;
 
         }
 
 
         .hero h1 .hero-title-subline {
 
-            font-size: 0.58em;
+            font-size: 0.63em;
 
-            letter-spacing: 0.22em;
+            letter-spacing: 0.1em;
 
-            line-height: 1.15;
+            line-height: 1;
 
         }
 
@@ -2131,9 +2146,8 @@
             loop
             playsinline
             preload="auto"
-            poster="landing-hero.jpg"
             aria-hidden="true">
-            <source src="landing-waves.mp4?v=20260911" type="video/mp4">
+            <source src="landing-waves.mp4?v=20260913" type="video/mp4">
     </video>
     <div class="container">
 
@@ -2145,11 +2159,9 @@
 
             <h1>
 
-                Experience  
-                <br>
-                Kovalam
-                <br>
-                By The Sea
+                <span class="hero-title-first-line">Experience</span>
+                <span>Kovalam</span>
+                <span class="hero-title-subline">By The Sea</span>
 
             </h1>
 
