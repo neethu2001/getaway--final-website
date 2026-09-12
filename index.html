@@ -436,7 +436,7 @@
         }
                 .hero h1 {
                             font-family: 'Playfair Display', serif;
-                            font-size: clamp(52px, 7vw, 108px);
+                            font-size: clamp(52px, 7.2vw, 112px);
                             font-weight: 400;
                             line-height: 0.88;
                             letter-spacing: 0.02em;
@@ -453,18 +453,20 @@
 
         .hero h1 .hero-title-first-line {
 
-            font-size: 0.5em;
+            font-size: 1em;
 
-            letter-spacing: 0.04em;
+            letter-spacing: 0.01em;
+
+            white-space: nowrap;
 
         }
 
 
         .hero h1 .hero-title-subline {
 
-            font-size: 0.63em;
+            font-size: 1em;
 
-            letter-spacing: 0.1em;
+            letter-spacing: 0.05em;
 
             line-height: 1;
 
@@ -490,13 +492,13 @@
 
         .hero p {
 
-            max-width: 650px;
+            max-width: 760px;
 
             margin: 0 auto;
 
             font-family: 'Montserrat', sans-serif;
 
-            font-size: 15px;
+            font-size: clamp(15px, 1.15vw, 18px);
 
             font-style: normal;
 
@@ -522,7 +524,7 @@
 
             position: static;
 
-            margin-top: clamp(28px, 4vh, 44px);
+            margin-top: clamp(34px, 5vh, 58px);
 
             width: 100%;
 
@@ -1865,6 +1867,13 @@
             }
 
 
+            .hero h1 .hero-title-first-line {
+
+                white-space: normal;
+
+            }
+
+
             .hero-tagline {
 
                 position: relative;
@@ -1900,7 +1909,7 @@
 
             .hero p {
 
-                font-size: 13px;
+                font-size: 14px;
 
             }
 
@@ -2159,8 +2168,7 @@
 
             <h1>
 
-                <span class="hero-title-first-line">Experience</span>
-                <span>Kovalam</span>
+                <span class="hero-title-first-line">Experience Kovalam</span>
                 <span class="hero-title-subline">By The Sea</span>
 
             </h1>
